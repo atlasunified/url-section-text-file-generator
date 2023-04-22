@@ -29,7 +29,6 @@ def extract_and_save_sections(file_path, output_folder):
     soup = BeautifulSoup(content, 'html.parser')
     headers = soup.find_all(['h1', 'h2', 'h3', 'h4'])
     h1_header = soup.find('h1')
-    code_blocks = soup.select("div.codeblock pre code.lang-python")
     
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
@@ -47,9 +46,10 @@ def extract_and_save_sections(file_path, output_folder):
             for element in header.find_all_next():
                 if element.name in ['h1', 'h2', 'h3', 'h4']:
                     break
-                if element.name == 'p' or element in code_blocks:
-                    section_content.append(element.get_text())
-            save_section_to_file(section_name, '\n'.join(section_content), h1_folder)
+                # Append the HTML content as a string
+                section_content.append(str(element))
+            # Join the HTML content and save it to a file
+            save_section_to_file(section_name, ''.join(section_content), h1_folder)
     else:
         print("No h1, h2, h3, h4 headers found.")
 

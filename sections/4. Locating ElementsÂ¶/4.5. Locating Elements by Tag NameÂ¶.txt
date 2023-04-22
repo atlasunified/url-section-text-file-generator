@@ -1,0 +1,44 @@
+<a class="headerlink" href="#locating-elements-by-tag-name" title="Permalink to this headline">Â¶</a><p>Use this when you want to locate an element by tag name.  With this strategy,
+the first element with the given tag name will be returned.  If no element has a
+matching tag name, a <code class="docutils literal notranslate"><span class="pre">NoSuchElementException</span></code> will be raised.</p><code class="docutils literal notranslate"><span class="pre">NoSuchElementException</span></code><span class="pre">NoSuchElementException</span><p>For instance, consider this page source:</p><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
+ <span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">Welcome</span><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="n">Site</span> <span class="n">content</span> <span class="n">goes</span> <span class="n">here</span><span class="o">.&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">html</span><span class="o">&gt;</span>
+</pre></div>
+</div><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
+ <span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">Welcome</span><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="n">Site</span> <span class="n">content</span> <span class="n">goes</span> <span class="n">here</span><span class="o">.&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">html</span><span class="o">&gt;</span>
+</pre></div><pre><span></span><span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
+ <span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">Welcome</span><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="n">Site</span> <span class="n">content</span> <span class="n">goes</span> <span class="n">here</span><span class="o">.&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">html</span><span class="o">&gt;</span>
+</pre><span></span><span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span><span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span><span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">Welcome</span><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;</span><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="n">Site</span><span class="n">content</span><span class="n">goes</span><span class="n">here</span><span class="o">.&lt;/</span><span class="n">p</span><span class="o">&gt;</span><span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span><span class="o">&lt;/</span><span class="n">html</span><span class="o">&gt;</span><p>The heading (h1) element can be located like this:</p><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">heading1</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element</span><span class="p">(</span><span class="n">By</span><span class="o">.</span><span class="n">TAG_NAME</span><span class="p">,</span> <span class="s1">'h1'</span><span class="p">)</span>
+</pre></div>
+</div><div class="highlight"><pre><span></span><span class="n">heading1</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element</span><span class="p">(</span><span class="n">By</span><span class="o">.</span><span class="n">TAG_NAME</span><span class="p">,</span> <span class="s1">'h1'</span><span class="p">)</span>
+</pre></div><pre><span></span><span class="n">heading1</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element</span><span class="p">(</span><span class="n">By</span><span class="o">.</span><span class="n">TAG_NAME</span><span class="p">,</span> <span class="s1">'h1'</span><span class="p">)</span>
+</pre><span></span><span class="n">heading1</span><span class="o">=</span><span class="n">driver</span><span class="o">.</span><span class="n">find_element</span><span class="p">(</span><span class="n">By</span><span class="o">.</span><span class="n">TAG_NAME</span><span class="p">,</span><span class="s1">'h1'</span><span class="p">)</span><div class="section" id="locating-elements-by-class-name">
+<h2>4.6. Locating Elements by Class Name<a class="headerlink" href="#locating-elements-by-class-name" title="Permalink to this headline">Â¶</a></h2>
+<p>Use this when you want to locate an element by class name.  With this strategy,
+the first element with the matching class name attribute will be returned.  If
+no element has a matching class name attribute, a <code class="docutils literal notranslate"><span class="pre">NoSuchElementException</span></code>
+will be raised.</p>
+<p>For instance, consider this page source:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
+ <span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">p</span> <span class="n">class</span><span class="o">=</span><span class="s2">"content"</span><span class="o">&gt;</span><span class="n">Site</span> <span class="n">content</span> <span class="n">goes</span> <span class="n">here</span><span class="o">.&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">html</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>The âpâ element can be located like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">content</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element</span><span class="p">(</span><span class="n">By</span><span class="o">.</span><span class="n">CLASS_NAME</span><span class="p">,</span> <span class="s1">'content'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>

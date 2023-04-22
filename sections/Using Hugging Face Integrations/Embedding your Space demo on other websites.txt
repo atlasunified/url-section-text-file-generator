@@ -1,1 +1,0 @@
-Throughout this guide, you've seen there are Gradio demos embedded. You can also do this on own website! The first step is to create a Space with the demo you want to showcase. You can embed it in your HTML code, as shown in the following self-contained example.

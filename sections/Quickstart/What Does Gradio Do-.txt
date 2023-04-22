@@ -1,2 +1,0 @@
-One of the best ways to share your machine learning model, API, or data science workflow with others is to create an interactive app that allows your users or colleagues to try out the demo in their browsers.
-Gradio allows you to build demos and share them, all in Python. And usually in just a few lines of code! So let's get started.

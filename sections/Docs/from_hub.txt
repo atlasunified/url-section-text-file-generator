@@ -1,8 +1,0 @@
-gradio.Base.from_hub(repo_name, Â·Â·Â·)
-Load a theme from the hub.  This DOES NOT require a HuggingFace account for downloading publicly available themes. 
-str
-required
-string of the form /@.  If a semantic version expression is omitted, the latest version will be fetched.
-str | None
-default: None
-HuggingFace Token. Only needed to download private themes.

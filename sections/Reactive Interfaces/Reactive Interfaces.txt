@@ -1,1 +1,0 @@
-This guide covers how to get Gradio interfaces to refresh automatically or continuously stream data.

@@ -1,2 +1,0 @@
-gradio.SimpleCSVLogger(Â·Â·Â·)
-A simplified implementation of the FlaggingCallback abstract class provided for illustrative purposes.  Each flagged sample (both the input and output data) is logged to a CSV file on the machine running the gradio app.

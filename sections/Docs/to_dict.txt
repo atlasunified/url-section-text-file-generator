@@ -1,2 +1,0 @@
-gradio.Base.to_dict(Â·Â·Â·)
-Convert the theme into a python dictionary.

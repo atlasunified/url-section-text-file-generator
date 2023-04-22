@@ -1,2 +1,0 @@
-gradio.load(name, Â·Â·Â·)
-Method that constructs a Blocks from a Hugging Face repo. Can accept model repos (if src is "models") or Space repos (if src is "spaces"). The input and output components are automatically loaded from the repo.

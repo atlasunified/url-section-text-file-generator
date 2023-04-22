@@ -1,1 +1,0 @@
-Let's go through some of the most popular features of Gradio! Here are Gradio's key features:

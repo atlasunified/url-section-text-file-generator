@@ -1,6 +1,0 @@
-Did you know that apart from being a full-stack machine learning demo, a Gradio Blocks app is also a regular-old python function!?
-This means that if you have a gradio Blocks (or Interface) app called demo, you can use demo like you would any python function.
-So doing something like output = demo("Hello", "friend") will run the first event defined in demo on the inputs "Hello" and "friend" and store it
-in the variable output.
-If I put you to sleep ð¥±, please bear with me! By using apps like functions, you can seamlessly compose Gradio apps.
-The following section will show how.

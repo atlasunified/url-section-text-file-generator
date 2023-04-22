@@ -1,7 +1,0 @@
-gradio.Series(interfaces, Â·Â·Â·)
-Creates a new Interface from multiple Interfaces in series (the output of one is fed as the input to the next, and so the input and output components must agree between the interfaces). 
-
-required
-any number of Interface objects that are to be connected in series
-
-additional kwargs that are passed into the new Interface object to customize it

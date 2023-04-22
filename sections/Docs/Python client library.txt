@@ -1,5 +1,0 @@
-
-            The Python client library is `gradio_client`. It is included in the latest
-            versions of the `gradio` package, but for a more lightweight experience, you
-            can install it using `pip` without having to install `gradio`:
-          

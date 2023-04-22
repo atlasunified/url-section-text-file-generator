@@ -1,2 +1,0 @@
-gradio.Accordion(label, Â·Â·Â·)
-Accordion is a layout element which can be toggled to show/hide the contained content.

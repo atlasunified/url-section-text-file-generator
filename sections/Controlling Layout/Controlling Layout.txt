@@ -1,1 +1,0 @@
-By default, Components in Blocks are arranged vertically. Let's take a look at how we can rearrange Components. Under the hood, this layout structure uses the flexbox model of web development.

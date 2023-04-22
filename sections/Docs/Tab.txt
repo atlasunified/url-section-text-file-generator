@@ -1,2 +1,0 @@
-with gradio.Tab():
-Tab (or its alias TabItem) is a layout element. Components defined within the Tab will be visible when this tab is selected tab.

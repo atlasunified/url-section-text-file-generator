@@ -1,2 +1,0 @@
-with gradio.Row():
-Row is a layout element within Blocks that renders all children horizontally.

@@ -1,2 +1,0 @@
-gradio.Blocks.queue(Â·Â·Â·)
-You can control the rate of processed requests by creating a queue. This will allow you to set the number of requests to be processed at one time, and will let users know their position in the queue.

@@ -1,0 +1,51 @@
+<a class="headerlink" href="#locating-hyperlinks-by-link-text" title="Permalink to this headline">Â¶</a><p>Use this when you know the link text used within an anchor tag.  With this
+strategy, the first element with the link text matching the provided value will
+be returned.  If no element has a matching link text attribute, a
+<code class="docutils literal notranslate"><span class="pre">NoSuchElementException</span></code> will be raised.</p><code class="docutils literal notranslate"><span class="pre">NoSuchElementException</span></code><span class="pre">NoSuchElementException</span><p>For instance, consider this page source:</p><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;html&gt;
+ &lt;body&gt;
+  &lt;p&gt;Are you sure you want to do this?&lt;/p&gt;
+  &lt;a href="continue.html"&gt;Continue&lt;/a&gt;
+  &lt;a href="cancel.html"&gt;Cancel&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></div>
+</div><div class="highlight"><pre><span></span>&lt;html&gt;
+ &lt;body&gt;
+  &lt;p&gt;Are you sure you want to do this?&lt;/p&gt;
+  &lt;a href="continue.html"&gt;Continue&lt;/a&gt;
+  &lt;a href="cancel.html"&gt;Cancel&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></div><pre><span></span>&lt;html&gt;
+ &lt;body&gt;
+  &lt;p&gt;Are you sure you want to do this?&lt;/p&gt;
+  &lt;a href="continue.html"&gt;Continue&lt;/a&gt;
+  &lt;a href="cancel.html"&gt;Cancel&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre><span></span><p>The continue.html link can be located like this:</p><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">continue_link</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element</span><span class="p">(</span><span class="n">By</span><span class="o">.</span><span class="n">LINK_TEXT</span><span class="p">,</span> <span class="s1">'Continue'</span><span class="p">)</span>
+<span class="n">continue_link</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element</span><span class="p">(</span><span class="n">By</span><span class="o">.</span><span class="n">PARTIAL_LINK_TEXT</span><span class="p">,</span> <span class="s1">'Conti'</span><span class="p">)</span>
+</pre></div>
+</div><div class="highlight"><pre><span></span><span class="n">continue_link</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element</span><span class="p">(</span><span class="n">By</span><span class="o">.</span><span class="n">LINK_TEXT</span><span class="p">,</span> <span class="s1">'Continue'</span><span class="p">)</span>
+<span class="n">continue_link</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element</span><span class="p">(</span><span class="n">By</span><span class="o">.</span><span class="n">PARTIAL_LINK_TEXT</span><span class="p">,</span> <span class="s1">'Conti'</span><span class="p">)</span>
+</pre></div><pre><span></span><span class="n">continue_link</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element</span><span class="p">(</span><span class="n">By</span><span class="o">.</span><span class="n">LINK_TEXT</span><span class="p">,</span> <span class="s1">'Continue'</span><span class="p">)</span>
+<span class="n">continue_link</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element</span><span class="p">(</span><span class="n">By</span><span class="o">.</span><span class="n">PARTIAL_LINK_TEXT</span><span class="p">,</span> <span class="s1">'Conti'</span><span class="p">)</span>
+</pre><span></span><span class="n">continue_link</span><span class="o">=</span><span class="n">driver</span><span class="o">.</span><span class="n">find_element</span><span class="p">(</span><span class="n">By</span><span class="o">.</span><span class="n">LINK_TEXT</span><span class="p">,</span><span class="s1">'Continue'</span><span class="p">)</span><span class="n">continue_link</span><span class="o">=</span><span class="n">driver</span><span class="o">.</span><span class="n">find_element</span><span class="p">(</span><span class="n">By</span><span class="o">.</span><span class="n">PARTIAL_LINK_TEXT</span><span class="p">,</span><span class="s1">'Conti'</span><span class="p">)</span><div class="section" id="locating-elements-by-tag-name">
+<h2>4.5. Locating Elements by Tag Name<a class="headerlink" href="#locating-elements-by-tag-name" title="Permalink to this headline">Â¶</a></h2>
+<p>Use this when you want to locate an element by tag name.  With this strategy,
+the first element with the given tag name will be returned.  If no element has a
+matching tag name, a <code class="docutils literal notranslate"><span class="pre">NoSuchElementException</span></code> will be raised.</p>
+<p>For instance, consider this page source:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
+ <span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">Welcome</span><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="n">Site</span> <span class="n">content</span> <span class="n">goes</span> <span class="n">here</span><span class="o">.&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">html</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>The heading (h1) element can be located like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">heading1</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element</span><span class="p">(</span><span class="n">By</span><span class="o">.</span><span class="n">TAG_NAME</span><span class="p">,</span> <span class="s1">'h1'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>

@@ -1,1 +1,0 @@
-This guide covers what more you can do with Examples: Loading examples from a directory, providing partial examples, and caching. If Examples is new to you, check out the intro in the Key Features guide. 

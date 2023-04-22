@@ -1,5 +1,0 @@
-As covered in the Key Features guide, adding examples to an Interface is as easy as providing a list of lists to the examples
-keyword argument. 
-Each sublist is a data sample, where each element corresponds to an input of the prediction function.
-The inputs must be ordered in the same order as the prediction function expects them.
-If your interface only has one input component, then you can provide your examples as a regular list instead of a list of lists.

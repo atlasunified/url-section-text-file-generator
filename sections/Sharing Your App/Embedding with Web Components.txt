@@ -1,9 +1,0 @@
-Web components typically offer a better experience to users than IFrames. Web components load lazily, meaning that they won't slow down the loading time of your website, and they automatically adjust their height based on the size of the Gradio app. 
-To embed with Web Components:
-Import the gradio JS library into into your site by adding the script below in your site (replace {GRADIO_VERSION} in the URL with the library version of Gradio you are using). 
-Add 
-element where you want to place the app. Set the src= attribute to your Space's embed URL, which you can find in the "Embed this Space" button. For example:
-You can see examples of how web components look on the Gradio landing page.
-You can also customize the appearance and behavior of your web component with attributes that you pass into the <gradio-app> tag:
-Here's an example of how to use these attributes to create a Gradio app that does not lazy load and has an initial height of 0px. 
-Note: While Gradio's CSS will never impact the embedding page, the embedding page can affect the style of the embedded Gradio app. Make sure that any CSS in the parent page isn't so general that it could also apply to the embedded Gradio app and cause the styling to break. Element selectors such as header { ... } and footer { ... } will be the most likely to cause issues.

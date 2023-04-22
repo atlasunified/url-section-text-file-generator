@@ -1,0 +1,22 @@
+<div class="searchformwrapper">
+<form action="search.html" class="search" method="get">
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+</form>
+</div><form action="search.html" class="search" method="get">
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+</form><input name="q" type="text"/><input type="submit" value="Go"/><input name="check_keywords" type="hidden" value="yes"/><input name="area" type="hidden" value="default"/><script type="text/javascript">$('#searchbox').show(0);</script><div class="clearer"></div><div class="footer">
+      ©2011-2018, Baiju Muthukadan.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/locating-elements.rst.txt" rel="nofollow">Page source</a>
+</div><a href="http://sphinx-doc.org/">Sphinx 1.8.6</a><a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a><a href="_sources/locating-elements.rst.txt" rel="nofollow">Page source</a>

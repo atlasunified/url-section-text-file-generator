@@ -1,3 +1,0 @@
-
-              Customize the layout of your Blocks UI with the layout classes below.
-            

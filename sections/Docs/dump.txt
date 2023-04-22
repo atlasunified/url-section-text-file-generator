@@ -1,5 +1,0 @@
-gradio.Base.dump(filename, Â·Â·Â·)
-Write the theme to a json file. 
-str
-required
-The path to write the theme too

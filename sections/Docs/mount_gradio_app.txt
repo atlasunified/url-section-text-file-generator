@@ -1,2 +1,0 @@
-gradio.mount_gradio_app(app, blocks, path, Â·Â·Â·)
-Mount a gradio.Blocks to an existing FastAPI application. 

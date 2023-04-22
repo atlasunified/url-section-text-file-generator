@@ -1,3 +1,0 @@
-
-              Customize the look of your app by writing your own custom theme
-            

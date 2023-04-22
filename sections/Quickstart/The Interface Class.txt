@@ -1,3 +1,0 @@
-You'll notice that in order to make the demo, we created a gr.Interface. This Interface class can wrap any Python function with a user interface. In the example above, we saw a simple text-based function, but the function could be anything from music generator to a tax calculator to the prediction function of a pretrained machine learning model.
-The core Interface class is initialized with three required parameters:
-Let's take a closer look at these components used to provide input and output.

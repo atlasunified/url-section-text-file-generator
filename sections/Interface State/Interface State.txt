@@ -1,1 +1,0 @@
-This guide covers how State is handled in Gradio. Learn the difference between Global and Session states, and how to use both.

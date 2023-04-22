@@ -1,5 +1,0 @@
-
-              The lightweight Gradio client libraries make it easy to use any Gradio app as an API.
-              We currently support a Python client libraries and are developing client 
-              libraries in other languages. 
-            

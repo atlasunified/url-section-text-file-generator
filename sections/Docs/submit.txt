@@ -1,2 +1,0 @@
-gradio_client.Client.submit(args, Â·Â·Â·)
-Creates and returns a Job object which calls the Gradio API in a background thread. The job can be used to retrieve the status and result of the remote API call. 
