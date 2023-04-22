@@ -1,3 +1,4 @@
+gradio.make_waveform(audio, Â·Â·Â·)
 Generates a waveform video from an audio file. Useful for creating an easy to share audio visualization. The output should be passed into a `gr.Video` component.
 str | Tuple[int, np.ndarray]
 required

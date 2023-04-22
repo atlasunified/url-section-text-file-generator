@@ -1,3 +1,4 @@
+gradio.Plot(Â·Â·Â·)
 Used to display various kinds of plots (matplotlib, plotly, or bokeh are supported) 
  As input:  this component does *not* accept input.
  As output: expects either a matplotlib.figure.Figure, a plotly.graph_objects._figure.Figure, or a dict corresponding to a bokeh plot (json_item format)

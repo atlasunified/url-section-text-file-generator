@@ -1,3 +1,4 @@
+gradio.Interpretation(component, Â·Â·Â·)
 Used to create an interpretation widget for a component. 
  As input:  this component does *not* accept input.
  As output: expects a dict with keys "original" and "interpretation".

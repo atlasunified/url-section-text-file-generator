@@ -1,3 +1,4 @@
+gradio.Video.clear(fn, Â·Â·Â·)
 This event is triggered when the user clears the component (e.g. image or audio) using the X button for the component. This method can be used when this component is in a Gradio Blocks.
 Callable | None
 required

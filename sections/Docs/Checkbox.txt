@@ -1,3 +1,4 @@
+gradio.Checkbox(Â·Â·Â·)
 Creates a checkbox that can be set to `True` or `False`. 
  As input:  passes the status of the checkbox as a bool into the function.
  As output: expects a bool returned from the function and, if it is True, checks the checkbox.

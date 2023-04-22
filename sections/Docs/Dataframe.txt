@@ -1,3 +1,4 @@
+gradio.Dataframe(Â·Â·Â·)
 Accepts or displays 2D input through a spreadsheet-like component for dataframes.
  As input:  passes the uploaded spreadsheet data as a pandas.DataFrame, numpy.array, List[List], or List depending on `type`
  As output: expects a pandas.DataFrame, numpy.array, List[List], List, a Dict with keys `data` (and optionally `headers`), or str path to a csv, which is rendered in the spreadsheet.

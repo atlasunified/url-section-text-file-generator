@@ -1,1 +1,2 @@
 In the example above, you'll notice that you are able to edit Textbox name, but not Textbox output. This is because any Component that acts as an input to an event listener is made interactive. However, since Textbox output acts only as an output, it is not interactive. You can directly configure the interactivity of a Component with the interactive= keyword argument. 
+output = gr.Textbox(label="Output", interactive=True)

@@ -1,3 +1,4 @@
+gradio.Base.from_hub(repo_name, Â·Â·Â·)
 Load a theme from the hub.  This DOES NOT require a HuggingFace account for downloading publicly available themes. 
 str
 required

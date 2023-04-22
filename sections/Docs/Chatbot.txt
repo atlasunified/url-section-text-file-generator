@@ -1,3 +1,4 @@
+gradio.Chatbot(Â·Â·Â·)
 Displays a chatbot output showing both user submitted messages and responses. Supports a subset of Markdown including bold, italics, code, and images. 
  As input:  this component does *not* accept input.
  As output: expects function to return a List[List[str | None | Tuple]], a list of lists. The inner list should have 2 elements: the user message and the response message. Messages should be strings, tuples, or Nones. If the message is a string, it can include Markdown. If it is a tuple, it should consist of (string filepath to image/video/audio, [optional string alt text]). Messages that are `None` are not displayed.

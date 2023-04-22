@@ -1,3 +1,4 @@
+gradio.Model3D.edit(fn, Â·Â·Â·)
 This event is triggered when the user edits the component (e.g. image) using the built-in editor. This method can be used when this component is in a Gradio Blocks.
 Callable | None
 required

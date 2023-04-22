@@ -1,3 +1,4 @@
+gradio.Base.push_to_hub(repo_name, Â·Â·Â·)
 Upload a theme to the HuggingFace hub.  This requires a HuggingFace account. 
 str
 required

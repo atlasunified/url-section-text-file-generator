@@ -1,4 +1,24 @@
 You can also run events consecutively by using the then method of an event listener. This will run an event after the previous event has finished running. This is useful for running events that update components in multiple steps. 
 For example, in the chatbot example below, we first update the chatbot with the user message immediately, and then update the chatbot with the computer response after a simulated delay.
+import gradio as gr
+import random
+import time
+
+with gr.Blocks() as demo:
+    chatbot = gr.Chatbot()
+    msg = gr.Textbox()
+    clear = gr.Button("Clear")
+
+    def respond(message, chat_history):
+        bot_message = random.choice(["How are you?", "I love you", "I'm very hungry"])
+        chat_history.append((message, bot_message))
+        time.sleep(1)
+        return "", chat_history
+
+    msg.submit(respond, [msg, chatbot], [msg, chatbot])
+    clear.click(lambda: None, None, chatbot, queue=False)
+
+demo.launch()
+
 
 The .then() method of an event listener executes the subsequent event regardless of whether the previous event raised any errors. If you'd like to  only run subsequent events if the previous event executed successfully, use the .success() method, which takes the same arguments as .then().

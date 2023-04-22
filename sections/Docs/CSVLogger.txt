@@ -1,1 +1,2 @@
+gradio.CSVLogger(Â·Â·Â·)
 The default implementation of the FlaggingCallback abstract class. Each flagged sample (both the input and output data) is logged to a CSV file with headers on the machine running the gradio app.

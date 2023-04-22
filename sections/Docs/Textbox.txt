@@ -1,3 +1,4 @@
+gradio.Textbox(Â·Â·Â·)
 Creates a textarea for user to enter string input or display string output. 
  As input:  passes textarea value as a str into the function.
  As output: expects a str returned from function and sets textarea value to it.

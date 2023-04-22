@@ -1,3 +1,4 @@
+gradio.Button(Â·Â·Â·)
 Used to create a button, that can be assigned arbitrary click() events. The label (value) of the button can be used as an input or set via the output of a function. 
  As input:  passes the button value as a str into the function
  As output: expects a str to be returned from a function, which is set as the label of the button

@@ -1,3 +1,4 @@
+gradio.JSON(Â·Â·Â·)
 Used to display arbitrary JSON output prettily. 
  As input:  this component does *not* accept input.
  As output: expects a str filepath to a file containing valid JSON -- or a list or dict that is valid JSON

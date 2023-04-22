@@ -1,3 +1,4 @@
+gradio.Video.upload(fn, Â·Â·Â·)
 This event is triggered when the user uploads a file into the component (e.g. when the user uploads a video into a video component). This method can be used when this component is in a Gradio Blocks.
 Callable | None
 required

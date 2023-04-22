@@ -1,3 +1,4 @@
+gradio.Base.from_dict(theme, Â·Â·Â·)
 Create a theme instance from a dictionary representation. 
 Dict[str, Dict[str, str]]
 required

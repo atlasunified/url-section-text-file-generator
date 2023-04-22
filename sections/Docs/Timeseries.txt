@@ -1,3 +1,4 @@
+gradio.Timeseries(Â·Â·Â·)
 Creates a component that can be used to upload/preview timeseries csv files or display a dataframe consisting of a time series graphically.
  As input:  passes the uploaded timeseries data as a pandas.DataFrame into the function
  As output: expects a pandas.DataFrame or str path to a csv to be returned, which is then displayed as a timeseries graph

@@ -1,3 +1,4 @@
+gradio.ColorPicker(Â·Â·Â·)
 Creates a color picker for user to select a color as string input.
  As input:  passes selected color value as a str into the function.
  As output: expects a str returned from function and sets color picker value to it.

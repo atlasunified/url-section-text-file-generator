@@ -1,3 +1,4 @@
+gradio.UploadButton(Â·Â·Â·)
 Used to create an upload button, when cicked allows a user to upload files that satisfy the specified file type or generic files (if file_type not set).
  As input:  passes the uploaded file as a file-object or List[file-object] depending on `file_count` (or a bytes/Listbytes depending on `type`)
  As output: expects function to return a str path to a file, or List[str] consisting of paths to files.

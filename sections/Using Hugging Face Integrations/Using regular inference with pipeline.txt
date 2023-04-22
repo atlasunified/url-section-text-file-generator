@@ -1,4 +1,22 @@
 First, let's build a simple interface that translates text from English to Spanish. Between the over a thousand models shared by the University of Helsinki, there is an existing model, opus-mt-en-es, that does precisely this!
 The ð¤ transformers library has a very easy-to-use abstraction, pipeline() that handles most of the complex code to offer a simple API for common tasks. By specifying the task and an (optional) model, you can use an existing model with few lines:
+import gradio as gr
+
+from transformers import pipeline
+
+pipe = pipeline("translation", model="Helsinki-NLP/opus-mt-en-es")
+
+def predict(text):
+  return pipe(text)[0]["translation_text"]
+
+iface = gr.Interface(
+  fn=predict, 
+  inputs='text',
+  outputs='text',
+  examples=[["Hello! My name is Omar"]]
+)
+
+iface.launch()
+
 The previous code produces the following interface, which you can try right here in your browser: 
 This demo requires installing four libraries: gradio, torch, transformers, and sentencepiece. Apart from that, this is a Gradio with the structure you're used to! The demo is a usual Gradio Interface with a prediction function, a specified input, and a specified output. The prediction function executes the pipeline function with the given input, retrieves the first (and only) translation result, and returns the translation_text field, which you're interested in.

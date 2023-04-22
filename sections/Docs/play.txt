@@ -1,3 +1,4 @@
+gradio.Video.play(fn, Â·Â·Â·)
 This event is triggered when the user plays the component (e.g. audio or video). This method can be used when this component is in a Gradio Blocks.
 Callable | None
 required

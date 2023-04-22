@@ -1,1 +1,2 @@
+gradio.Blocks.launch(Â·Â·Â·)
 Launches a simple web server that serves the demo. Can also be used to create a public link used by anyone to access the demo from their browser by setting share=True. 

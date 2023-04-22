@@ -1,3 +1,4 @@
+gradio.Progress(progress, Â·Â·Â·)
 Updates progress tracker with progress and message text.
 float | Tuple[int, int | None] | None
 required

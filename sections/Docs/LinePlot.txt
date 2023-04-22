@@ -1,3 +1,4 @@
+gradio.LinePlot(Â·Â·Â·)
 Create a line plot.  
  As input:  this component does *not* accept input.
  As output: expects a pandas dataframe with the data to plot.

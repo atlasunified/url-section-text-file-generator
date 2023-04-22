@@ -1,3 +1,4 @@
+gradio.CheckboxGroup(Â·Â·Â·)
 Creates a set of checkboxes of which a subset can be checked.
  As input:  passes the list of checked checkboxes as a List[str] or their indices as a List[int] into the function, depending on `type`.
  As output: expects a List[str], each element of which becomes a checked checkbox.

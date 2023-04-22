@@ -1,3 +1,4 @@
+gradio.Progress.tqdm(iterable, Â·Â·Â·)
 Attaches progress tracker to iterable, like tqdm.
 Iterable | None
 required

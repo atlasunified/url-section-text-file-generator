@@ -1,1 +1,2 @@
+gradio.Interface.from_pipeline(pipeline, Â·Â·Â·)
 Class method that constructs an Interface from a Hugging Face transformers.Pipeline object. The input and output components are automatically determined from the pipeline.

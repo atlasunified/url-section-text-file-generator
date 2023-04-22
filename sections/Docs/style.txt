@@ -1,3 +1,4 @@
+gradio.Video.style(Â·Â·Â·)
 This method can be used to change the appearance of the video component.
 int | None
 default: None

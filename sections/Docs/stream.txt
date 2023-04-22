@@ -1,3 +1,4 @@
+gradio.Image.stream(fn, Â·Â·Â·)
 This event is triggered when the user streams the component (e.g. a live webcam component). This method can be used when this component is in a Gradio Blocks.
 Callable | None
 required

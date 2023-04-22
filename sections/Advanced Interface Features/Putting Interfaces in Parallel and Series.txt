@@ -1,4 +1,15 @@
 Gradio also lets you mix interfaces very easily using the gradio.Parallel and gradio.Series classes. Parallel lets you put two similar models (if they have the same input type) in parallel to compare model predictions:
+generator1 = gr.Interface.load("huggingface/gpt2")
+generator2 = gr.Interface.load("huggingface/EleutherAI/gpt-neo-2.7B")
+generator3 = gr.Interface.load("huggingface/EleutherAI/gpt-j-6B")
+
+gr.Parallel(generator1, generator2, generator3).launch()
+
 Series lets you put models and spaces in series, piping the output of one model into the input of the next model. 
+generator = gr.Interface.load("huggingface/gpt2")
+translator = gr.Interface.load("huggingface/t5-small")
+
+gr.Series(generator, translator).launch()  # this demo generates text, then translates it to German, and outputs the final result.
+
 And of course, you can also mix Parallel and Series together whenever that makes sense!
 Learn more about Parallel and Series in the docs. 

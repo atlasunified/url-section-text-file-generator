@@ -1,3 +1,4 @@
+gradio.Label(Â·Â·Â·)
 Displays a classification label, along with confidence scores of top categories, if provided. 
  As input:  this component does *not* accept input.
  As output: expects a Dict[str, float] of classes and confidences, or str with just the class or an int/float for regression outputs, or a str path to a .json file containing a json dictionary in the structure produced by Label.postprocess().

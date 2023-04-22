@@ -1,1 +1,2 @@
+with gradio.Box():
 Box is a a layout element which places children in a box with rounded corners and some padding around them.

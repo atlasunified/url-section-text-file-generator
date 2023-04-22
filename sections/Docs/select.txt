@@ -1,3 +1,4 @@
+gradio.Textbox.select(fn, Â·Â·Â·)
 Event listener for when the user selects text in the Textbox. Uses event data gradio.SelectData to carry `value` referring to selected subtring, and `index` tuple referring to selected range endpoints. See EventData documentation on how to use this event data.
 Callable | None
 required

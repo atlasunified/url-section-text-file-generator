@@ -1,3 +1,4 @@
+gradio.Textbox.blur(fn, Â·Â·Â·)
 This event is triggered when the component's is unfocused/blurred (e.g. when the user clicks outside of a textbox). This method can be used when this component is in a Gradio Blocks.
 Callable | None
 required

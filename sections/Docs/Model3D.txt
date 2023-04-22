@@ -1,3 +1,4 @@
+gradio.Model3D(Â·Â·Â·)
 Component allows users to upload or view 3D Model files (.obj, .glb, or .gltf). 
  As input:  This component passes the uploaded file as a str filepath.
  As output: expects function to return a str path to a file of type (.obj, glb, or .gltf)

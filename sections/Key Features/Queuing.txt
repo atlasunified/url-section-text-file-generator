@@ -1,6 +1,25 @@
 If your app expects heavy traffic, use the queue() method to control processing rate. This will queue up calls so only a certain number of requests are processed at a single time. Queueing uses websockets, which also prevent network timeouts, so you should use queueing if the inference time of your function is long (> 1min).
 With Interface:
+demo = gr.Interface(...).queue()
+demo.launch()
+
 With Blocks:
+with gr.Blocks() as demo:
+    #...
+demo.queue()
+demo.launch()
+
 You can control the number of requests processsed at a single time as such:
+demo.queue(concurrency_count=3)
+
 See the Docs on queueing on configuring other queuing parameters.
 To specify only certain functions for queueing in Blocks:
+with gr.Blocks() as demo2:
+    num1 = gr.Number()
+    num2 = gr.Number()
+    output = gr.Number()
+    gr.Button("Add").click(
+        lambda a, b: a + b, [num1, num2], output)
+    gr.Button("Multiply").click(
+        lambda a, b: a * b, [num1, num2], output, queue=True)
+demo2.launch()

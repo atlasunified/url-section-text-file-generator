@@ -1,3 +1,4 @@
+gradio.Radio(Â·Â·Â·)
 Creates a set of radio buttons of which only one can be selected. 
  As input:  passes the value of the selected radio button as a str or its index as an int into the function, depending on `type`.
  As output: expects a str corresponding to the value of the radio button to be selected.

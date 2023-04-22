@@ -1,3 +1,4 @@
+gradio.Slider.release(fn, Â·Â·Â·)
 This event is triggered when the user releases the mouse on this component (e.g. when the user releases the slider). This method can be used when this component is in a Gradio Blocks.
 Callable | None
 required

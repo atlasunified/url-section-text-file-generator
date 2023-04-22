@@ -1,3 +1,4 @@
+gradio.UploadButton.click(fn, Â·Â·Â·)
 This event is triggered when the component (e.g. a button) is clicked. This method can be used when this component is in a Gradio Blocks.
 Callable | None
 required

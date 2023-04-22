@@ -1,1 +1,2 @@
+gradio.HuggingFaceDatasetJSONSaver(hf_token, dataset_name, Â·Â·Â·)
 A callback that saves flagged data (both the input and output data) to a Hugging Face dataset in JSONL format.  Each data sample is saved in a different JSONL file, allowing multiple users to use flagging simultaneously. Saving to a single CSV would cause errors as only one user can edit at the same time. 

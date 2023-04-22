@@ -1,3 +1,4 @@
+gradio.Slider(Â·Â·Â·)
 Creates a slider that ranges from `minimum` to `maximum` with a step size of `step`. 
  As input:  passes slider value as a float into the function.
  As output: expects an int or float returned from function and sets slider value to it as long as it is within range.

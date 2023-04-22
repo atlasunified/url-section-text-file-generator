@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>422cfeab-1419-4567-81d0-65e40d2bc6af</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>splitter-main.py</StartupFile>
+    <StartupFile>main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>

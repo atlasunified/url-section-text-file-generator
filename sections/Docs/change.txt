@@ -1,3 +1,4 @@
+gradio.Video.change(fn, Â·Â·Â·)
 This event is triggered when the component's input value changes (e.g. when the user types in a textbox or uploads an image). This method can be used when this component is in a Gradio Blocks.
 Callable | None
 required

@@ -1,3 +1,4 @@
+gradio.Error(message, Â·Â·Â·)
 This class allows you to pass custom error messages to the user. You can do so by raising a gr.Error("custom message") anywhere in the code, and when that line is executed the custom message will appear in a modal on the demo. 
 
 required

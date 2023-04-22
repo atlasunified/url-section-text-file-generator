@@ -1,3 +1,4 @@
+gradio.Audio(Â·Â·Â·)
 Creates an audio component that can be used to upload/record audio (as an input) or display audio (as an output).
  As input:  passes the uploaded audio as a Tuple(int, numpy.array) corresponding to (sample rate in Hz, audio data as a 16-bit int array whose values range from -32768 to 32767), or as a str filepath, depending on `type`.
  As output: expects a Tuple(int, numpy.array) corresponding to (sample rate in Hz, audio data as a float or int numpy array) or as a str filepath or URL to an audio file, which gets displayed

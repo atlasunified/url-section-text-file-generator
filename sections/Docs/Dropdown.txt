@@ -1,3 +1,4 @@
+gradio.Dropdown(Â·Â·Â·)
 Creates a dropdown of choices from which entries can be selected.
  As input:  passes the value of the selected dropdown entry as a str or its index as an int into the function, depending on `type`.
  As output: expects a str corresponding to the value of the dropdown entry to be selected.

@@ -1,3 +1,4 @@
+gradio.Code(Â·Â·Â·)
 Creates a Code editor for entering, editing or viewing code.
  As input:  passes a str of code into the function.
  As output: expects the function to return a str of code or a single-elment tuple: (string filepath,)

@@ -1,10 +1,16 @@
 If the app you are loading defines more than one function, you can specify which function to use
 with the fn_index and api_name parameters.
 In the code for our english to german demo, you'll see the following line:
+translate_btn.click(translate, inputs=english, outputs=german, api_name="translate-to-german")
+
 The api_name gives this function a unique name in our app. You can use this name to tell gradio which
 function in the upstream space you want to use:
+english_generator(text, api_name="translate-to-german")[0]["generated_text"]
+
 You can also use the fn_index parameter.
 Imagine my app also defined an english to spanish translation function.
 In order to use it in our text generation app, we would use the following code:
+english_generator(text, fn_index=1)[0]["generated_text"]
+
 Functions in gradio spaces are zero-indexed, so since the spanish translator would be the second function in my space,
 you would use index 1. 

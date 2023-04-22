@@ -1,3 +1,4 @@
+gradio.Number(Â·Â·Â·)
 Creates a numeric field for user to enter numbers as input or display numeric output. 
  As input:  passes field value as a float or int into the function, depending on `precision`.
  As output: expects an int or float returned from the function and sets field value to it.

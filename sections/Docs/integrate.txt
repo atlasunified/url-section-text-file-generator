@@ -1,3 +1,4 @@
+gradio.Blocks.integrate(Â·Â·Â·)
 A catch-all method for integrating with other libraries. This method should be run after launch()
 
 default: None

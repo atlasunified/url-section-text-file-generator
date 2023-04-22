@@ -1,3 +1,4 @@
+gradio.HTML(Â·Â·Â·)
 Used to display arbitrary HTML output. 
  As input:  this component does *not* accept input.
  As output: expects a valid HTML str.

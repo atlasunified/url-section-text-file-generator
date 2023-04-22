@@ -1,3 +1,4 @@
+gradio.File(Â·Â·Â·)
 Creates a file component that allows uploading generic file (when used as an input) and or displaying generic files (output).
  As input:  passes the uploaded file as a tempfile._TemporaryFileWrapper or List[tempfile._TemporaryFileWrapper] depending on `file_count` (or a bytes/Listbytes depending on `type`)
  As output: expects function to return a str path to a file, or List[str] consisting of paths to files.

@@ -1,1 +1,2 @@
+gradio_client.Client(src, Â·Â·Â·)
 The main Client class for the Python client. This class is used to connect to a remote Gradio app and call its API endpoints. 

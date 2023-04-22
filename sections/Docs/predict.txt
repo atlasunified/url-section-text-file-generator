@@ -1,1 +1,2 @@
+gradio_client.Client.predict(args, Â·Â·Â·)
 Calls the Gradio API and returns the result (this is a blocking call). 

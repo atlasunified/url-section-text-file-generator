@@ -2,5 +2,7 @@
 If you click and open the space above, you'll see a "Use via API" link in the footer of the app. 
 
 This is a page that documents the REST API that users can use to query the Interface function. Blocks apps can also generate an API page, though the API has to be explicitly named for each event listener, such as
+btn.click(add, [num1, num2], output, api_name="addition")
+
 This will document the endpoint /api/addition/ to the automatically generated API page. 
 Note: For Gradio apps in which queueing is enabled, users can bypass the queue if they make a POST request to your API endpoint. To disable this behavior, set api_open=False in the queue() method.

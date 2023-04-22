@@ -1,4 +1,23 @@
 Components within a Column will be placed vertically atop each other. Since the vertical layout is the default layout for Blocks apps anyway, to be useful, Columns are usually  nested within Rows. For example:
+import gradio as gr
+
+with gr.Blocks() as demo:
+    with gr.Row():
+        text1 = gr.Textbox(label="t1")
+        slider2 = gr.Textbox(label="s2")
+        drop3 = gr.Dropdown(["a", "b", "c"], label="d3")
+    with gr.Row():
+        with gr.Column(scale=1, min_width=600):
+            text1 = gr.Textbox(label="prompt 1")
+            text2 = gr.Textbox(label="prompt 2")
+            inbtw = gr.Button("Between")
+            text4 = gr.Textbox(label="prompt 1")
+            text5 = gr.Textbox(label="prompt 2")
+        with gr.Column(scale=2, min_width=600):
+            img1 = gr.Image("images/cheetah.jpg")
+            btn = gr.Button("Go").style(full_width=True)
+
+demo.launch()
 
 See how the first column has two Textboxes arranged vertically. The second column has an Image and Button arranged vertically. Notice how the relative widths of the two columns is set by the scale parameter. The column with twice the scale value takes up twice the width.
 Columns have a min_width parameter as well (320 pixels by default). This prevents adjacent columns from becoming too narrow on mobile screens.

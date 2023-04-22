@@ -8,6 +8,11 @@ potentially speeding up your demo. Here's what the Gradio code looks like (notic
 the batch=True and max_batch_size=16 -- both of these parameters can be passed
 into event triggers or into the Interface class)
 With Interface:
+demo = gr.Interface(trim_words, ["textbox", "number"], ["output"], 
+                    batch=True, max_batch_size=16)
+demo.queue()
+demo.launch()
+
 With Blocks:
 In the example above, 16 requests could be processed in parallel (for a total inference
 time of 5 seconds), instead of each request being processed separately (for a total

@@ -1,3 +1,4 @@
+gradio.Video.stop(fn, Â·Â·Â·)
 This event is triggered when the user stops the component (e.g. audio or video). This method can be used when this component is in a Gradio Blocks.
 Callable | None
 required

@@ -1,3 +1,4 @@
+gr.Dataset(components, samples)
 Used to create an output widget for showing datasets. Used to render the examples box.
  As input:  passes the selected sample either as a list of data (if type="value") or as an int index (if type="index")
  As output: expects a list of lists corresponding to the dataset data.

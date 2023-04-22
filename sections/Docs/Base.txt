@@ -1,3 +1,4 @@
+gradio.Base(Â·Â·Â·)
 
 colors.Color | str
 default: Color()

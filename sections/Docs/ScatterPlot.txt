@@ -1,3 +1,4 @@
+gradio.ScatterPlot(Â·Â·Â·)
 Create a scatter plot.  
  As input:  this component does *not* accept input.
  As output: expects a pandas dataframe with the data to plot.

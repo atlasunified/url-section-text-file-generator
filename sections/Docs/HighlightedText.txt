@@ -1,3 +1,4 @@
+gradio.HighlightedText(Â·Â·Â·)
 Displays text that contains spans that are highlighted by category or numerical value. 
  As input:  this component does *not* accept input.
  As output: expects a List[Tuple[str, float | str]]] consisting of spans of text and their associated labels, or a Dict with two keys: (1) "text" whose value is the complete text, and "entities", which is a list of dictionaries, each of which have the keys: "entity" (consisting of the entity label), "start" (the character index where the label starts), and "end" (the character index where the label ends). Entities should not overlap.

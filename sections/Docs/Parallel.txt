@@ -1,3 +1,4 @@
+gradio.Parallel(interfaces, Â·Â·Â·)
 Creates a new Interface consisting of multiple Interfaces in parallel (comparing their outputs). The Interfaces to put in Parallel must share the same input components (but can have different output components). 
 
 required

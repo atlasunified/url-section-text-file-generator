@@ -1,7 +1,18 @@
 You can use the existing Spaces to tweak the UI or combine multiple demos. Let's find how to do this! First, let's take a look at an existing demo that does background removal. 
 This is a Gradio demo already shared by a community member. You can load an existing demo using Interface in a syntax similar to how it's done for the Inference API. It just takes two lines of code and with the prefix spaces.
+import gradio as gr
+
+gr.Interface.load("spaces/eugenesiow/remove-bg").launch()
+
 The code snippet above will load the same interface as the corresponding Space demo.
 You can change UI elements, such as the title or theme, but also change the expected type. The previous Space expected users to upload images. What if you would like users to have their webcam and remove the background from there? You can load the Space but change the source of input as follows:
+import gradio as gr
+
+gr.Interface.load(
+  "spaces/eugenesiow/remove-bg", 
+  inputs=[gr.Image(label="Input Image", source="webcam")]
+).launch()
+
 The code above generates the following demo.
 As you can see, the demo looks the same, but it uses a webcam input instead of user-uploaded images.
 You can learn more about this feature, and how to use it with the new Blocks API in the Using Gradio Blocks Like Functions guide
