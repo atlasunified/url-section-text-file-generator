@@ -1,0 +1,22 @@
+Generates a waveform video from an audio file. Useful for creating an easy to share audio visualization. The output should be passed into a `gr.Video` component.
+str | Tuple[int, np.ndarray]
+required
+Audio file path or tuple of (sample_rate, audio_data)
+str
+default: "#f3f4f6"
+Background color of waveform (ignored if bg_image is provided)
+str | None
+default: None
+Background image of waveform
+float
+default: 0.75
+Opacity of foreground waveform
+str | Tuple[str, str]
+default: ('#fbbf24', '#ea580c')
+Color of waveform bars. Can be a single color or a tuple of (start_color, end_color) of gradient
+int
+default: 50
+Number of bars in waveform
+float
+default: 0.6
+Width of bars in waveform. 1 represents full width, 0.5 represents half width, etc.

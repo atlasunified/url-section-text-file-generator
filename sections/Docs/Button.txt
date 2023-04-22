@@ -1,0 +1,23 @@
+Used to create a button, that can be assigned arbitrary click() events. The label (value) of the button can be used as an input or set via the output of a function. 
+ As input:  passes the button value as a str into the function
+ As output: expects a str to be returned from a function, which is set as the label of the button
+str | Callable
+default: "Run"
+Default text for the button to display. If callable, the function will be called whenever the app loads to set the initial value of the component.
+str
+default: "secondary"
+'primary' for main call-to-action, 'secondary' for a more subdued style, 'stop' for a stop button.
+bool
+default: True
+If False, component will be hidden.
+bool
+default: True
+If False, the Button will be in a disabled state.
+str | None
+default: None
+An optional string that is assigned as the id of this component in the HTML DOM. Can be used for targeting CSS styles.
+List[str] | str | None
+default: None
+An optional list of strings that are assigned as the classes of this component in the HTML DOM. Can be used for targeting CSS styles.
+gradio.Button
+"button"

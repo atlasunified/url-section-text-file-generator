@@ -1,0 +1,77 @@
+Create a bar plot.  
+ As input:  this component does *not* accept input.
+ As output: expects a pandas dataframe with the data to plot.
+pd.DataFrame | Callable | None
+default: None
+The pandas dataframe containing the data to display in a scatter plot.
+str | None
+default: None
+Column corresponding to the x axis.
+str | None
+default: None
+Column corresponding to the y axis.
+str | None
+default: None
+The column to determine the bar color. Must be categorical (discrete values).
+bool
+default: True
+If True, the bars will be displayed vertically. If False, the x and y axis will be switched, displaying the bars horizontally. Default is True.
+str | None
+default: None
+The column with which to split the overall plot into smaller subplots.
+str | None
+default: None
+The title to display on top of the chart.
+List[str] | str | None
+default: None
+The column (or list of columns) to display on the tooltip when a user hovers over a bar.
+str | None
+default: None
+The title given to the x axis. By default, uses the value of the x parameter.
+str | None
+default: None
+The title given to the y axis. By default, uses the value of the y parameter.
+str | None
+default: None
+The title given to the color legend. By default, uses the value of color parameter.
+str | None
+default: None
+The label displayed on top of the subplot columns (or rows if vertical=True). Use an empty string to omit.
+str | None
+default: None
+The position of the color legend. If the string value 'none' is passed, this legend is omitted. For other valid position values see: https://vega.github.io/vega/docs/legends/#orientation.
+int | None
+default: None
+The height of the plot in pixels.
+int | None
+default: None
+The width of the plot in pixels.
+List[int] | None
+default: None
+A tuple of list containing the limits for the y-axis, specified as [y_min, y_max].
+str | None
+default: None
+The (optional) caption to display below the plot.
+bool | None
+default: True
+Whether users should be able to interact with the plot by panning or zooming with their mouse or trackpad.
+str | None
+default: None
+The (optional) label to display on the top left corner of the plot.
+bool
+default: True
+Whether the label should be displayed.
+float | None
+default: None
+If `value` is a callable, run the function 'every' number of seconds while the client connection is open. Has no effect otherwise. Queue must be enabled. The event can be accessed (e.g. to cancel it) via this component's .load_event attribute.
+bool
+default: True
+Whether the plot should be visible.
+str | None
+default: None
+An optional string that is assigned as the id of this component in the HTML DOM. Can be used for targeting CSS styles.
+List[str] | str | None
+default: None
+An optional list of strings that are assigned as the classes of this component in the HTML DOM. Can be used for targeting CSS styles.
+gradio.BarPlot
+"barplot"

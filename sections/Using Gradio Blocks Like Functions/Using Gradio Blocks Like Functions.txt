@@ -1,0 +1,1 @@
+Prerequisite: This Guide builds on the Blocks Introduction. Make sure to read that guide first.

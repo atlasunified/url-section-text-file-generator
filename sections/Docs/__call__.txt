@@ -1,0 +1,13 @@
+Updates progress tracker with progress and message text.
+float | Tuple[int, int | None] | None
+required
+If float, should be between 0 and 1 representing completion. If Tuple, first number represents steps completed, and second value represents total steps or None if unknown. If None, hides progress bar.
+str | None
+default: None
+description to display.
+int | None
+default: None
+estimated total number of steps.
+str
+default: "steps"
+unit of iterations.

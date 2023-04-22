@@ -1,0 +1,4 @@
+Here's an app to give you a taste of what's possible with Blocks:
+
+A lot more going on here! We'll cover how to create complex Blocks apps like this in the building with blocks section for you.
+Congrats, you're now familiar with the basics of Gradio! ð¥³ Go to our next guide to learn more about the key features of Gradio.

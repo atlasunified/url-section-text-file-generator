@@ -1,0 +1,3 @@
+By adjusting the visibility of components in a dynamic way, it is possible to create
+demos with Gradio that support a variable numbers of outputs. Here's a very simple example
+where the number of output textboxes is controlled by an input slider:

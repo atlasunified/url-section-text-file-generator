@@ -1,0 +1,1 @@
+When a subclass of EventData is added as a type hint to an argument of an event listener method, this object will be passed as that argument. It contains information about the event that triggered the listener, such the target object, and other data related to the specific event that are attributes of the subclass. 

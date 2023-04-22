@@ -1,0 +1,4 @@
+If you'd like to have a permanent link to your Gradio demo on the internet, use Hugging Face Spaces. Hugging Face Spaces provides the infrastructure to permanently host your machine learning model for free! 
+You can either drag and drop a folder containing your Gradio model and all related files, or you can point Spaces to your Git repository and Spaces will pull the Gradio app from there. See this guide how to host on Hugging Face Spaces for more information. 
+
+

@@ -1,0 +1,6 @@
+Special hidden component that stores session state across runs of the demo by the same user. The value of the State variable is cleared when the user refreshes the page. 
+ As input:  No preprocessing is performed
+ As output: No postprocessing is performed
+Any
+default: None
+the initial value (of abitrary type) of the state. The provided argument is deepcopied. If a callable is provided, the function will be called whenever the app loads to set the initial value of the state.

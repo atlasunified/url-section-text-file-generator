@@ -1,0 +1,2 @@
+You can elem_id to add an HTML element id to any component, and elem_classes to add a class or list of classes. This will allow you to select elements more easily with CSS.
+The CSS #warning ruleset will only target the second Textbox, while the .feedback ruleset will target both.

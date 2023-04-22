@@ -1,0 +1,3 @@
+Suppose you had a more complex function, with multiple inputs and outputs. In the example below, we define a function that takes a string, boolean, and number, and returns a string and number. Take a look how you pass a list of input and output components.
+
+You simply wrap the components in a list. Each component in the inputs list corresponds to one of the parameters of the function, in order. Each component in the outputs list corresponds to one of the values returned by the function, again in order.

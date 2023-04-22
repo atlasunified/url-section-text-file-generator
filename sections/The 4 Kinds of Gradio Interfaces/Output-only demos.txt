@@ -1,0 +1,1 @@
+What about demos that only contain outputs? In order to build such a demo, you simply set the value of the inputs parameter in Interface() to None. Here's an example demo of a mock image generation model:

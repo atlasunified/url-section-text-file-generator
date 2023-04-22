@@ -1,0 +1,21 @@
+Upload a theme to the HuggingFace hub.  This requires a HuggingFace account. 
+str
+required
+The name of the repository to store the theme assets, e.g. 'my_theme' or 'sunset'.
+str | None
+default: None
+The name of the org to save the space in. If None (the default), the username corresponding to the logged in user, or hÆ_token is used.
+str | None
+default: None
+A semantic version tag for theme. Bumping the version tag lets you publish updates to a theme without changing the look of applications that already loaded your theme.
+str | None
+default: None
+API token for your HuggingFace account
+str | None
+default: None
+Name for the name. If None, defaults to repo_name
+str | None
+default: None
+A long form description to your theme.
+bool
+default: False

@@ -1,0 +1,4 @@
+We showed how treating a Blocks app like a regular python helps you compose functionality across different apps.
+Any Blocks app can be treated like a function, but a powerful pattern is to load an app hosted on 
+Hugging Face Spaces prior to treating it like a function in your own app.
+You can also load models hosted on the Hugging Face Model Hub - see the Using Hugging Face Integrations guide for an example.

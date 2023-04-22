@@ -1,0 +1,1 @@
+Returns the latest status update from the Job in the form of a StatusUpdate object, which contains the following fields: code, rank, queue_size, success, time, eta. 

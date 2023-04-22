@@ -1,0 +1,6 @@
+Gradio supports many types of components, such as Image, DataFrame, Video, or Label. Let's try an image-to-image function to get a feel for these!
+
+When using the Image component as input, your function will receive a NumPy array with the shape (width, height, 3), where the last dimension represents the RGB values. We'll return an image as well in the form of a NumPy array.
+You can also set the datatype used by the component with the type= keyword argument. For example, if you wanted your function to take a file path to an image instead of a NumPy array, the input Image component could be written as:
+Also note that our input Image component comes with an edit button ð, which allows for cropping and zooming into images. Manipulating images in this way can help reveal biases or hidden flaws in a machine learning model!
+You can read more about the many components and how to use them in the Gradio docs.

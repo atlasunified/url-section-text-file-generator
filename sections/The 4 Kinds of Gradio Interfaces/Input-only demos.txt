@@ -1,0 +1,1 @@
+Similarly, to create a demo that only contains inputs, set the value of outputs parameter in Interface() to be None. Here's an example demo that saves any uploaded image to disk:

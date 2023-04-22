@@ -1,0 +1,7 @@
+This method can be used to change the appearance of the video component.
+int | None
+default: None
+Height of the video.
+int | None
+default: None
+Width of the video.

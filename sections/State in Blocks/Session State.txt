@@ -1,0 +1,6 @@
+Gradio supports session state, where data persists across multiple submits within a page session, in Blocks apps as well. To reiterate, session data is not shared between different users of your model. To store data in a session state, you need to do three things:
+Let's take a look at a game of hangman. 
+
+Let's see how we do each of the 3 steps listed above in this game:
+With more complex apps, you will likely have many State variables storing session state in a single Blocks app.
+Learn more about State in the docs.

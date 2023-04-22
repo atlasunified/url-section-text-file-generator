@@ -1,0 +1,1 @@
+Global state in Blocks works the same as in Interface. Any variable created outside a function call is a reference shared between all users.

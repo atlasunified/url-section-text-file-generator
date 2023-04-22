@@ -1,0 +1,6 @@
+
+              Once you have created several Interfaces, we provide several classes that let you
+              start combining them together. For example, you can chain them in Series
+              or compare their outputs in Parallel if the inputs and outputs match accordingly.
+              You can also display arbitrary Interfaces together in a tabbed layout using TabbedInterface.
+            

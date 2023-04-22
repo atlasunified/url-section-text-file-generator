@@ -1,0 +1,30 @@
+Used to create an upload button, when cicked allows a user to upload files that satisfy the specified file type or generic files (if file_type not set).
+ As input:  passes the uploaded file as a file-object or List[file-object] depending on `file_count` (or a bytes/Listbytes depending on `type`)
+ As output: expects function to return a str path to a file, or List[str] consisting of paths to files.
+ Format expected for examples: a str path to a local file that populates the component.
+str
+default: "Upload a File"
+Text to display on the button. Defaults to "Upload a File".
+str | List[str] | Callable | None
+default: None
+Default text for the button to display.
+bool
+default: True
+If False, component will be hidden.
+str | None
+default: None
+An optional string that is assigned as the id of this component in the HTML DOM. Can be used for targeting CSS styles.
+List[str] | str | None
+default: None
+An optional list of strings that are assigned as the classes of this component in the HTML DOM. Can be used for targeting CSS styles.
+str
+default: "file"
+Type of value to be returned by component. "file" returns a temporary file object with the same base name as the uploaded file, whose full path can be retrieved by file_obj.name, "binary" returns an bytes object.
+str
+default: "single"
+if single, allows user to upload one file. If "multiple", user uploads multiple files. If "directory", user uploads all files in selected directory. Return type will be list for each file in case of "multiple" or "directory".
+List[str] | None
+default: None
+List of type of files to be uploaded. "file" allows any file to be uploaded, "image" allows only image files to be uploaded, "audio" allows only audio files to be uploaded, "video" allows only video files to be uploaded, "text" allows only text files to be uploaded.
+gradio.UploadButton
+"uploadbutton"

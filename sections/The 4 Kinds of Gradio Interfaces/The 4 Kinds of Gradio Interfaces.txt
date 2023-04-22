@@ -1,0 +1,5 @@
+So far, we've always assumed that in order to build an Gradio demo, you need both inputs and outputs. But this isn't always the case for machine learning demos: for example, unconditional image generation models don't take any input but produce an image as the output.
+It turns out that the gradio.Interface class can actually handle 4 different kinds of demos:
+Depending on the kind of demo, the user interface (UI) looks slightly different:
+
+Let's see how to build each kind of demo using the Interface class, along with examples:

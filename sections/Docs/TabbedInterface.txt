@@ -1,0 +1,19 @@
+A TabbedInterface is created by providing a list of Interfaces, each of which gets rendered in a separate tab.
+List[Interface]
+required
+a list of interfaces to be rendered in tabs.
+List[str] | None
+default: None
+a list of tab names. If None, the tab names will be "Tab 1", "Tab 2", etc.
+str | None
+default: None
+a title for the interface; if provided, appears above the input and output components in large font. Also used as the tab title when opened in a browser window.
+Theme | None
+default: None
+
+bool | None
+default: None
+whether to allow basic telemetry. If None, will use GRADIO_ANALYTICS_ENABLED environment variable or default to True.
+str | None
+default: None
+custom css or path to custom css file to apply to entire Blocks

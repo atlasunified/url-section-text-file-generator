@@ -1,0 +1,1 @@
+Both Components and Layout elements have a visible argument that can set initially and also updated using gr.update(). Setting gr.update(visible=...) on a Column can be used to show or hide a set of Components.

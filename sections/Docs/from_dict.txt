@@ -1,0 +1,4 @@
+Create a theme instance from a dictionary representation. 
+Dict[str, Dict[str, str]]
+required
+The dictionary representation of the theme.

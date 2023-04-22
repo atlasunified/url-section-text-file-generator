@@ -1,0 +1,83 @@
+Create a line plot.  
+ As input:  this component does *not* accept input.
+ As output: expects a pandas dataframe with the data to plot.
+pd.DataFrame | Callable | None
+default: None
+The pandas dataframe containing the data to display in a scatter plot.
+str | None
+default: None
+Column corresponding to the x axis.
+str | None
+default: None
+Column corresponding to the y axis.
+str | None
+default: None
+The column to determine the point color. If the column contains numeric data, gradio will interpolate the column data so that small values correspond to light colors and large values correspond to dark values.
+str | None
+default: None
+The column to determine the symbol used to draw the line, e.g. dashed lines, dashed lines with points.
+bool | None
+default: None
+Whether to draw a point on the line for each (x, y) coordinate pair.
+str | None
+default: None
+The title to display on top of the chart.
+List[str] | str | None
+default: None
+The column (or list of columns) to display on the tooltip when a user hovers a point on the plot.
+str | None
+default: None
+The title given to the x axis. By default, uses the value of the x parameter.
+str | None
+default: None
+The title given to the y axis. By default, uses the value of the y parameter.
+str | None
+default: None
+The title given to the color legend. By default, uses the value of color parameter.
+str | None
+default: None
+The title given to the stroke_dash legend. By default, uses the value of the stroke_dash parameter.
+str | None
+default: None
+The position of the color legend. If the string value 'none' is passed, this legend is omitted. For other valid position values see: https://vega.github.io/vega/docs/legends/#orientation.
+str | None
+default: None
+The position of the stoke_dash legend. If the string value 'none' is passed, this legend is omitted. For other valid position values see: https://vega.github.io/vega/docs/legends/#orientation.
+int | None
+default: None
+The height of the plot in pixels.
+int | None
+default: None
+The width of the plot in pixels.
+List[int] | None
+default: None
+A tuple or list containing the limits for the x-axis, specified as [x_min, x_max].
+List[int] | None
+default: None
+A tuple of list containing the limits for the y-axis, specified as [y_min, y_max].
+str | None
+default: None
+The (optional) caption to display below the plot.
+bool | None
+default: True
+Whether users should be able to interact with the plot by panning or zooming with their mouse or trackpad.
+str | None
+default: None
+The (optional) label to display on the top left corner of the plot.
+bool
+default: True
+Whether the label should be displayed.
+float | None
+default: None
+If `value` is a callable, run the function 'every' number of seconds while the client connection is open. Has no effect otherwise. Queue must be enabled. The event can be accessed (e.g. to cancel it) via this component's .load_event attribute.
+bool
+default: True
+Whether the plot should be visible.
+str | None
+default: None
+An optional string that is assigned as the id of this component in the HTML DOM. Can be used for targeting CSS styles.
+List[str] | str | None
+default: None
+An optional list of strings that are assigned as the classes of this component in the HTML DOM. Can be used for targeting CSS styles.
+gradio.LinePlot
+"lineplot"

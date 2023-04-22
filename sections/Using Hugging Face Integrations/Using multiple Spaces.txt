@@ -1,0 +1,4 @@
+Sometimes a single model inference will not be enough: you might want to call multiple models by piping them (using the output of model A as the input of model B). Series can achieve this. Other times, you might want to run two models in parallel to compare them. Parallel can do this!
+Let's combine the notion of running things in parallel with the Spaces integration. The GPT-J-6B Space demos a model that generates text using a model called GPT-J. The T0pp Space demos another generative model called T0pp. Let's see how to combine both into one.
+iface1 and iface2 are loading existing Spaces. Then, with Parallel, you can run the interfaces parallelly. When you click submit, you will get the output for both interfaces. This is how the demo looks like:
+Although both models are generative, you can see that the way both models behave is very different. That's a powerful application of Parallel!

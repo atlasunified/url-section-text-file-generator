@@ -1,0 +1,13 @@
+Attaches progress tracker to iterable, like tqdm.
+Iterable | None
+required
+iterable to attach progress tracker to.
+str | None
+default: None
+description to display.
+int | None
+default: None
+estimated total number of steps.
+str
+default: "steps"
+unit of iterations.

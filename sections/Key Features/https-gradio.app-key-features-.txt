@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+      <title>Key Features</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A Step-by-Step Gradio Tutorial">
+<meta name="author" content="Gradio Team">
+<meta property="og:title" content="Key Features">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gradio.app/key-features">
+<meta property="og:description" content="A Step-by-Step Gradio Tutorial">
+<meta property="og:image" content="https://www.gradio.app/assets/img/meta-image.png" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@Gradio">
+<meta name="twitter:title" content="Key Features">
+<meta name="twitter:description" content="A Step-by-Step Gradio Tutorial.">
+<meta name="twitter:image" content="https://www.gradio.app/assets/img/meta-image.png">
+
+<link rel="icon" type="image/png" href="/assets/img/logo.png">
+<link rel="stylesheet" href="/style.89f71609db418e667531.css">
+<link rel="stylesheet" href="/assets/prism.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="canonical" href="https://gradio.app/key-features" />
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156449732-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-156449732-1');
+</script>
+    
+    <link rel="stylesheet" href="/style.89f71609db418e667531.css">
+    <link rel="stylesheet" href="/assets/prism.css">
+  </head>
+  <body>
+    <div
+  class="container mx-auto flex flex-wrap justify-between flex-row relative items-center px-4 py-5 gap-6 text-lg z-50"
+>
+  <a href="/">
+    <img src="/assets/gradio.svg" >
+  </a>
+  <svg
+    class="h-8 w-8 lg:hidden"
+    viewBox="-10 -10 20 20"
+    onclick='document.querySelector("nav").classList.toggle("hidden"),document.querySelector("nav").classList.toggle("flex")'
+  >
+    <rect x="-7" y="-6" width="14" height="2"></rect>
+    <rect x="-7" y="-1" width="14" height="2"></rect>
+    <rect x="-7" y="4" width="14" height="2"></rect>
+  </svg>
+  <nav
+    class="hidden w-full flex-col gap-3 lg:flex lg:w-auto lg:flex-row lg:gap-8"
+  >
+    <a class="thin-link flex items-center gap-3" href="/quickstart"
+      ><span>â¡</span> <span>Quickstart</span>
+    </a>
+    <a class="thin-link flex items-center gap-3" href="/docs"
+      ><span>âï¸</span> <span>Docs</span>
+    </a>
+    <a class="thin-link flex items-center gap-3" href="/guides"
+      ><span>ð¡</span> <span>Guides</span></a
+    >
+    <a class="thin-link flex items-center gap-3" href="/demos"
+      ><span>ð¢</span> <span>Demos</span></a
+    >
+    <div
+      class="group relative flex cursor-pointer items-center gap-3"
+      onclick='document.querySelector(".help-menu").classList.toggle("flex"),document.querySelector(".help-menu").classList.toggle("hidden")'
+    >
+      <span>ð</span> <span>Community</span>
+      <svg
+        class="h-4 w-4"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+      >
+        <path
+          d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+        ></path>
+      </svg>
+      <div
+        class="help-menu absolute top-6 hidden w-52 flex-col bg-white shadow group-hover:flex sm:right-0"
+      >
+        <a
+          class="thin-link inline-block px-4 py-2 hover:bg-gray-100"
+          href="https://github.com/gradio-app/gradio/issues/new/choose"
+          target="_blank"
+          >File an Issue</a
+        >
+        <a
+          class="thin-link inline-block px-4 py-2 hover:bg-gray-100"
+          href="https://discuss.huggingface.co/c/gradio/26"
+          target="_blank"
+          >Discuss</a
+        >
+        <a
+          class="thin-link inline-block px-4 py-2 hover:bg-gray-100"
+          target="_blank"
+          href="https://discord.gg/feTf9x3ZSB"
+          >Discord</a
+        >
+        <a
+          class="thin-link inline-block px-4 py-2 hover:bg-gray-100"
+          target="_blank"
+          href="https://gradio.curated.co/"
+          >Newsletter</a
+        >
+      </div>
+    </div>
+    <a class="thin-link flex items-center gap-3" href="https://github.com/gradio-app/gradio"
+      >
+    <img src="/assets/img/github-black.svg" class="w-6">
+    </a>
+  </nav>
+</div>
+    <div class="container mx-auto px-4 flex gap-4 relative">
+      <div class="side-navigation h-screen leading-relaxed sticky top-0 text-md overflow-y-auto overflow-x-hidden hidden lg:block rounded-t-xl bg-gradient-to-r from-white to-gray-50"
+           style="min-width: 18%">
+        
+          
+          <div class="category-link  mb-2  font-semibold px-4 pt-2 text-ellipsis block"
+             style="max-width: 12rem">
+            Getting Started 
+            
+          </div>
+          
+            <a class="guide-link   -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/quickstart/">Quickstart</a>
+            
+          
+            <a class="guide-link  current-nav-link pb-1  -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/key-features/">Key Features</a>
+            
+              <div class="navigation max-w-full bg-gradient-to-r from-orange-50 to-orange-100 p-2 mx-2 border-l-2 border-orange-500 mb-2">
+              </div>
+            
+          
+            <a class="guide-link   -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/sharing-your-app/">Sharing Your App</a>
+            
+          
+        
+          
+          <div class="category-link  my-2  font-semibold px-4 pt-2 text-ellipsis block"
+             style="max-width: 12rem">
+            Building Interfaces 
+            
+          </div>
+          
+            <a class="guide-link   -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/interface-state/">Interface State</a>
+            
+          
+            <a class="guide-link   -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/reactive-interfaces/">Reactive Interfaces</a>
+            
+          
+            <a class="guide-link   -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/more-on-examples/">More On Examples</a>
+            
+          
+            <a class="guide-link   -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/advanced-interface-features/">Advanced Interface Features</a>
+            
+          
+            <a class="guide-link   -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/four-kinds-of-interfaces/">Four Kinds Of Interfaces</a>
+            
+          
+        
+          
+          <div class="category-link  my-2  font-semibold px-4 pt-2 text-ellipsis block"
+             style="max-width: 12rem">
+            Building With Blocks 
+            
+          </div>
+          
+            <a class="guide-link   -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/blocks-and-event-listeners/">Blocks And Event Listeners</a>
+            
+          
+            <a class="guide-link   -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/controlling-layout/">Controlling Layout</a>
+            
+          
+            <a class="guide-link   -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/state-in-blocks/">State In Blocks</a>
+            
+          
+            <a class="guide-link   -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/custom-CSS-and-JS/">Custom CSS And JS</a>
+            
+          
+            <a class="guide-link   -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/using-blocks-like-functions/">Using Blocks Like Functions</a>
+            
+          
+        
+          
+          <div class="category-link  my-2  font-semibold px-4 pt-2 text-ellipsis block"
+             style="max-width: 12rem">
+            Integrating Other Frameworks 
+            
+          </div>
+          
+            <a class="guide-link   -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/using-hugging-face-integrations/">Using Hugging Face Integrations</a>
+            
+          
+            <a class="guide-link   -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/Gradio-and-Comet/">Gradio And Comet</a>
+            
+          
+            <a class="guide-link   -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/Gradio-and-ONNX-on-Hugging-Face/">Gradio And ONNX On Hugging Face</a>
+            
+          
+            <a class="guide-link   -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/Gradio-and-Wandb-Integration/">Gradio And Wandb Integration</a>
+            
+          
+            <a class="guide-link   -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/image-classification-in-pytorch/">Image Classification In Pytorch</a>
+            
+          
+            <a class="guide-link   -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/image-classification-in-tensorflow/">Image Classification In Tensorflow</a>
+            
+          
+            <a class="guide-link   -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/image-classification-with-vision-transformers/">Image Classification With Vision Transformers</a>
+            
+          
+        
+          
+          <div class="category-link  my-2  font-semibold px-4 pt-2 text-ellipsis block"
+             style="max-width: 12rem">
+            Tabular Data Science And Plots 
+            
+          </div>
+          
+            <a class="guide-link   -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/connecting-to-a-database/">Connecting To A Database</a>
+            
+          
+            <a class="guide-link   -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/creating-a-dashboard-from-bigquery-data/">Creating A Dashboard From Bigquery Data</a>
+            
+          
+            <a class="guide-link   -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/creating-a-dashboard-from-supabase-data/">Creating A Dashboard From Supabase Data</a>
+            
+          
+            <a class="guide-link   -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/creating-a-realtime-dashboard-from-google-sheets/">Creating A Realtime Dashboard From Google Sheets</a>
+            
+          
+            <a class="guide-link   -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/plot-component-for-maps/">Plot Component For Maps</a>
+            
+          
+            <a class="guide-link   -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/using-gradio-for-tabular-workflows/">Using Gradio For Tabular Workflows</a>
+            
+          
+        
+          
+          <div class="category-link  my-2  font-semibold px-4 pt-2 text-ellipsis block"
+             style="max-width: 12rem">
+            Client Libraries 
+            
+          </div>
+          
+            <a class="guide-link   -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/getting-started-with-the-python-client/">Getting Started With The Python Client</a>
+            
+          
+        
+          
+          <div class="category-link  my-2  font-semibold px-4 pt-2 text-ellipsis block"
+             style="max-width: 12rem">
+            Other Tutorials 
+            
+            <button class="block show-guides" onclick="show_all_guides()"> [ show ] </button>
+            
+          </div>
+          
+            <a class="guide-link   hidden  -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/building-a-pictionary-app/">Building A Pictionary App</a>
+            
+          
+            <a class="guide-link   hidden  -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/create-your-own-friends-with-a-gan/">Create Your Own Friends With A Gan</a>
+            
+          
+            <a class="guide-link   hidden  -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/creating-a-chatbot/">Creating A Chatbot</a>
+            
+          
+            <a class="guide-link   hidden  -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/creating-a-new-component/">Creating A New Component</a>
+            
+          
+            <a class="guide-link   hidden  -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/custom-interpretations-with-blocks/">Custom Interpretations With Blocks</a>
+            
+          
+            <a class="guide-link   hidden  -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/developing-faster-with-reload-mode/">Developing Faster With Reload Mode</a>
+            
+          
+            <a class="guide-link   hidden  -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/gradio-and-llm-agents/">Gradio And Llm Agents</a>
+            
+          
+            <a class="guide-link   hidden  -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/how-to-use-3D-model-component/">How To Use 3D Model Component</a>
+            
+          
+            <a class="guide-link   hidden  -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/named-entity-recognition/">Named Entity Recognition</a>
+            
+          
+            <a class="guide-link   hidden  -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/real-time-speech-recognition/">Real Time Speech Recognition</a>
+            
+          
+            <a class="guide-link   hidden  -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/running-background-tasks/">Running Background Tasks</a>
+            
+          
+            <a class="guide-link   hidden  -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/setting-up-a-demo-for-maximum-performance/">Setting Up A Demo For Maximum Performance</a>
+            
+          
+            <a class="guide-link   hidden  -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/theming-guide/">Theming Guide</a>
+            
+          
+            <a class="guide-link   hidden  -indent-2 ml-2 thin-link px-4 block overflow-hidden"
+               style="max-width: 12rem"
+               href="/using-flagging/">Using Flagging</a>
+            
+          
+        
+      </div>
+      <div class="w-full">
+        
+        <div class="prose text-lg max-w-full"><h1 id="key-features">Key Features</h1>
+
+<p>Let's go through some of the most popular features of Gradio! Here are Gradio's key features:</p>
+
+<ol>
+<li><a href="#example-inputs">Adding example inputs</a></li>
+<li><a href="#errors">Passing custom error messages</a></li>
+<li><a href="#descriptive-content">Adding descriptive content</a></li>
+<li><a href="#flagging">Setting up flagging</a></li>
+<li><a href="#preprocessing-and-postprocessing">Preprocessing and postprocessing</a></li>
+<li><a href="#styling">Styling demos</a></li>
+<li><a href="#queuing">Queuing users</a></li>
+<li><a href="#iterative-outputs">Iterative outputs</a></li>
+<li><a href="#progress-bars">Progress bars</a></li>
+<li><a href="#batch-functions">Batch functions</a></li>
+</ol>
+
+<h2 id="example-inputs">Example Inputs</h2>
+
+<p>You can provide example data that a user can easily load into <code>Interface</code>. This can be helpful to demonstrate the types of inputs the model expects, as well as to provide a way to explore your dataset in conjunction with your model. To load example data, you can provide a <strong>nested list</strong> to the <code>examples=</code>  keyword argument of the Interface constructor. Each sublist within the outer list represents a data sample, and each element within the sublist represents an input for each input component. The format of example data for each component is specified in the <a rel="noopener" target="_blank" href="https://gradio.app/docs#components">Docs</a>.</p>
+
+<div class='codeblock'><pre><code class='lang-python'>import gradio as gr
+
+def calculator(num1, operation, num2):
+    if operation == "add":
+        return num1 + num2
+    elif operation == "subtract":
+        return num1 - num2
+    elif operation == "multiply":
+        return num1 * num2
+    elif operation == "divide":
+        if num2 == 0:
+            raise gr.Error("Cannot divide by zero!")
+        return num1 / num2
+
+demo = gr.Interface(
+    calculator,
+    [
+        "number", 
+        gr.Radio(["add", "subtract", "multiply", "divide"]),
+        "number"
+    ],
+    "number",
+    examples=[
+        [5, "add", 3],
+        [4, "divide", 2],
+        [-4, "multiply", 2.5],
+        [0, "subtract", 1.2],
+    ],
+    title="Toy Calculator",
+    description="Here's a sample toy calculator. Allows you to calculate things like $2+2=4$",
+)
+demo.launch()
+</code></pre></div>
+
+<p><gradio-app space='gradio/calculator' /></p>
+
+<p>You can load a large dataset into the examples to browse and interact with the dataset through Gradio. The examples will be automatically paginated (you can configure this through the <code>examples_per_page</code> argument of <code>Interface</code>).</p>
+
+<p>Continue learning about examples in the <a rel="noopener" target="_blank" href="https://gradio.app/more-on-examples">More On Examples</a> guide.</p>
+
+<h2 id="errors">Errors</h2>
+
+<p>You wish to pass custom error messages to the user. To do so, raise a <code>gr.Error("custom message")</code> to display an error message. If you try to divide by zero in the calculator demo above, a popup modal will display the custom error message. Learn more about Error in the <a rel="noopener" target="_blank" href="https://gradio.app/docs#error">docs</a>.</p>
+
+<h2 id="descriptive-content">Descriptive Content</h2>
+
+<p>In the previous example, you may have noticed the <code>title=</code> and <code>description=</code> keyword arguments in the <code>Interface</code> constructor that helps users understand your app.</p>
+
+<p>There are three arguments in the <code>Interface</code> constructor to specify where this content should go:</p>
+
+<ul>
+<li><code>title</code>: which accepts text and can display it at the very top of interface, and also becomes the page title.</li>
+<li><code>description</code>: which accepts text, markdown or HTML and places it right under the title.</li>
+<li><code>article</code>: which also accepts text, markdown or HTML and places it below the interface.</li>
+</ul>
+
+<p><img src="/assets/guides/annotated.png" alt="annotated" /></p>
+
+<p>If you're using the <code>Blocks</code> API instead, you can insert text, markdown, or HTML anywhere using the <code>gr.Markdown(...)</code> or <code>gr.HTML(...)</code> components, with descriptive content inside the <code>Component</code> constructor.</p>
+
+<p>Another useful keyword argument is <code>label=</code>, which is present in every <code>Component</code>. This modifies the label text at the top of each <code>Component</code>. You can also add the <code>info=</code> keyword argument to form elements like <code>Textbox</code> or <code>Radio</code> to provide further information on their usage.</p>
+
+<div class='codeblock'><pre><code class='lang-python'>gr.Number(label='Age', info='In years, must be greater than 0')
+</code></pre></div>
+
+<h2 id="flagging">Flagging</h2>
+
+<p>By default, an <code>Interface</code> will have "Flag" button. When a user testing your <code>Interface</code> sees input with interesting output, such as erroneous or unexpected model behaviour, they can flag the input for you to review. Within the directory provided by the  <code>flagging_dir=</code>  argument to the <code>Interface</code> constructor, a CSV file will log the flagged inputs. If the interface involves file data, such as for Image and Audio components, folders will be created to store those flagged data as well.</p>
+
+<p>For example, with the calculator interface shown above, we would have the flagged data stored in the flagged directory shown below:</p>
+
+<div class='codeblock'><pre><code class='lang-directory'>+-- calculator.py
++-- flagged/
+|   +-- logs.csv
+</code></pre></div>
+
+<p><em>flagged/logs.csv</em></p>
+
+<div class='codeblock'><pre><code class='lang-csv'>num1,operation,num2,Output
+5,add,7,12
+6,subtract,1.5,4.5
+</code></pre></div>
+
+<p>With the sepia interface shown earlier, we would have the flagged data stored in the flagged directory shown below:</p>
+
+<div class='codeblock'><pre><code class='lang-directory'>+-- sepia.py
++-- flagged/
+|   +-- logs.csv
+|   +-- im/
+|   |   +-- 0.png
+|   |   +-- 1.png
+|   +-- Output/
+|   |   +-- 0.png
+|   |   +-- 1.png
+</code></pre></div>
+
+<p><em>flagged/logs.csv</em></p>
+
+<div class='codeblock'><pre><code class='lang-csv'>im,Output
+im/0.png,Output/0.png
+im/1.png,Output/1.png
+</code></pre></div>
+
+<p>If you wish for the user to provide a reason for flagging, you can pass a list of strings to the <code>flagging_options</code> argument of Interface. Users will have to select one of the strings when flagging, which will be saved as an additional column to the CSV.</p>
+
+<h2 id="preprocessing-and-postprocessing">Preprocessing and Postprocessing</h2>
+
+<p><img src="/assets/img/dataflow.svg" alt="annotated" /></p>
+
+<p>As you've seen, Gradio includes components that can handle a variety of different data types, such as images, audio, and video. Most components can be used both as inputs or outputs.</p>
+
+<p>When a component is used as an input, Gradio automatically handles the <em>preprocessing</em> needed to convert the data from a type sent by the user's browser (such as a base64 representation of a webcam snapshot) to a form that can be accepted by your function (such as a <code>numpy</code> array).</p>
+
+<p>Similarly, when a component is used as an output, Gradio automatically handles the <em>postprocessing</em> needed to convert the data from what is returned by your function (such as a list of image paths) to a form that can be displayed in the user's browser (such as a <code>Gallery</code> of images in base64 format).</p>
+
+<p>You can control the <em>preprocessing</em> using the parameters when constructing the image component. For example, here if you instantiate the <code>Image</code> component with the following parameters, it will convert the image to the <code>PIL</code> type and reshape it to be <code>(100, 100)</code> no matter the original size that it was submitted as:</p>
+
+<div class='codeblock'><pre><code class='lang-py'>img = gr.Image(shape=(100, 100), type="pil")
+</code></pre></div>
+
+<p>In contrast, here we keep the original size of the image, but invert the colors before converting it to a numpy array:</p>
+
+<div class='codeblock'><pre><code class='lang-py'>img = gr.Image(invert_colors=True, type="numpy")
+</code></pre></div>
+
+<p>Postprocessing is a lot easier! Gradio automatically recognizes the format of the returned data (e.g. is the <code>Image</code> a <code>numpy</code> array or a <code>str</code> filepath?) and postprocesses it into a format that can be displayed by the browser.</p>
+
+<p>Take a look at the <a rel="noopener" target="_blank" href="https://gradio.app/docs">Docs</a> to see all the preprocessing-related parameters for each Component.</p>
+
+<h2 id="styling">Styling</h2>
+
+<p>Gradio themes are the easiest way to customize the look and feel of your app. You can choose from a variety of themes, or create your own. To do so, pass the <code>theme=</code> kwarg to the <code>Interface</code> constructor. For example:</p>
+
+<div class='codeblock'><pre><code class='lang-python'>demo = gr.Interface(..., theme=gr.themes.Monochrome())
+</code></pre></div>
+
+<p>Gradio comes with a set of prebuilt themes which you can load from <code>gr.themes.*</code>. You can extend these themes or create your own themes from scratch - see the <a rel="noopener" target="_blank" href="https://gradio.app/theming-guide">Theming guide</a> for more details.</p>
+
+<p>For additional styling ability, you can pass any CSS to your app using the <code>css=</code> kwarg.
+The base class for the Gradio app is <code>gradio-container</code>, so here's an example that changes the background color of the Gradio app:</p>
+
+<div class='codeblock'><pre><code class='lang-python'>with gr.Interface(css=".gradio-container {background-color: red}") as demo:
+    ...
+</code></pre></div>
+
+<p>Some components can be additionally styled through the <code>style()</code> method. For example:</p>
+
+<div class='codeblock'><pre><code class='lang-python'>img = gr.Image("lion.jpg").style(height='24', rounded=False)
+</code></pre></div>
+
+<p>Take a look at the <a rel="noopener" target="_blank" href="https://gradio.app/docs">Docs</a> to see all the styling options for each Component.</p>
+
+<h2 id="queuing">Queuing</h2>
+
+<p>If your app expects heavy traffic, use the <code>queue()</code> method to control processing rate. This will queue up calls so only a certain number of requests are processed at a single time. Queueing uses websockets, which also prevent network timeouts, so you should use queueing if the inference time of your function is long (&gt; 1min).</p>
+
+<p>With <code>Interface</code>:</p>
+
+<div class='codeblock'><pre><code class='lang-python'>demo = gr.Interface(...).queue()
+demo.launch()
+</code></pre></div>
+
+<p>With <code>Blocks</code>:</p>
+
+<div class='codeblock'><pre><code class='lang-python'>with gr.Blocks() as demo:
+    #...
+demo.queue()
+demo.launch()
+</code></pre></div>
+
+<p>You can control the number of requests processsed at a single time as such:</p>
+
+<div class='codeblock'><pre><code class='lang-python'>demo.queue(concurrency_count=3)
+</code></pre></div>
+
+<p>See the <a rel="noopener" target="_blank" href="/docs/#queue">Docs on queueing</a> on configuring other queuing parameters.</p>
+
+<p>To specify only certain functions for queueing in Blocks:</p>
+
+<div class='codeblock'><pre><code class='lang-python'>with gr.Blocks() as demo2:
+    num1 = gr.Number()
+    num2 = gr.Number()
+    output = gr.Number()
+    gr.Button("Add").click(
+        lambda a, b: a + b, [num1, num2], output)
+    gr.Button("Multiply").click(
+        lambda a, b: a * b, [num1, num2], output, queue=True)
+demo2.launch()
+</code></pre></div>
+
+<h2 id="iterative-outputs">Iterative Outputs</h2>
+
+<p>In some cases, you may want to stream a sequence of outputs rather than show a single output at once. For example, you might have an image generation model and you want to show the image that is generated at each step, leading up to the final image. Or you might have a chatbot which streams its response one word at a time instead of returning it all at once.</p>
+
+<p>In such cases, you can supply a <strong>generator</strong> function into Gradio instead of a regular function. Creating generators in Python is very simple: instead of a single <code>return</code> value, a function should <code>yield</code> a series of values instead. Usually the <code>yield</code> statement is put in some kind of loop. Here's an example of an generator that simply counts up to a given number:</p>
+
+<div class='codeblock'><pre><code class='lang-python'>def my_generator(x):
+    for i in range(x):
+        yield i
+</code></pre></div>
+
+<p>You supply a generator into Gradio the same way as you would a regular function. For example, here's a a (fake) image generation model that generates noise for several steps before outputting an image:</p>
+
+<div class='codeblock'><pre><code class='lang-python'>import gradio as gr
+import numpy as np
+import time
+
+# define core fn, which returns a generator {steps} times before returning the image
+def fake_diffusion(steps):
+    for _ in range(steps):
+        time.sleep(1)
+        image = np.random.random((600, 600, 3))
+        yield image
+    image = "https://gradio-builds.s3.amazonaws.com/diffusion_image/cute_dog.jpg"
+    yield image
+
+
+demo = gr.Interface(fake_diffusion, inputs=gr.Slider(1, 10, 3), outputs="image")
+
+# define queue - required for generators
+demo.queue()
+
+demo.launch()
+</code></pre></div>
+
+<p><gradio-app space='gradio/fake_diffusion' /></p>
+
+<p>Note that we've added a <code>time.sleep(1)</code> in the iterator to create an artificial pause between steps so that you are able to observe the steps of the iterator (in a real image generation model, this probably wouldn't be necessary).</p>
+
+<p>Supplying a generator into Gradio <strong>requires</strong> you to enable queuing in the underlying Interface or Blocks (see the queuing section above).</p>
+
+<h2 id="progress-bars">Progress Bars</h2>
+
+<p>Gradio supports the ability to create a custom Progress Bars so that you have customizability and control over the progress update that you show to the user. In order to enable this, simply add an argument to your method that has a default value of a <code>gr.Progress</code> instance. Then you can update the progress levels by calling this instance directly with a float between 0 and 1, or using the <code>tqdm()</code> method of the <code>Progress</code> instance to track progress over an iterable, as shown below. Queueing must be enabled for progress updates.</p>
+
+<div class='codeblock'><pre><code class='lang-python'>import gradio as gr
+import time
+
+def slowly_reverse(word, progress=gr.Progress()):
+    progress(0, desc="Starting")
+    time.sleep(1)
+    progress(0.05)
+    new_string = ""
+    for letter in progress.tqdm(word, desc="Reversing"):
+        time.sleep(0.25)
+        new_string = letter + new_string
+    return new_string
+
+demo = gr.Interface(slowly_reverse, gr.Text(), gr.Text())
+
+if __name__ == "__main__":
+    demo.queue(concurrency_count=10).launch()
+</code></pre></div>
+
+<p><gradio-app space='gradio/progress_simple' /></p>
+
+<p>If you use the <code>tqdm</code> library, you can even report progress updates automatically from any <code>tqdm.tqdm</code> that already exists within your function by setting the default argument as  <code>gr.Progress(track_tqdm=True)</code>!</p>
+
+<h2 id="batch-functions">Batch Functions</h2>
+
+<p>Gradio supports the ability to pass <em>batch</em> functions. Batch functions are just
+functions which take in a list of inputs and return a list of predictions.</p>
+
+<p>For example, here is a batched function that takes in two lists of inputs (a list of
+words and a list of ints), and returns a list of trimmed words as output:</p>
+
+<div class='codeblock'><pre><code class='lang-py'>import time
+
+def trim_words(words, lens):
+    trimmed_words = []
+    time.sleep(5)
+    for w, l in zip(words, lens):
+        trimmed_words.append(w[:int(l)])        
+    return [trimmed_words]
+</code></pre></div>
+
+<p>The advantage of using batched functions is that if you enable queuing, the Gradio
+server can automatically <em>batch</em> incoming requests and process them in parallel,
+potentially speeding up your demo. Here's what the Gradio code looks like (notice
+the <code>batch=True</code> and <code>max_batch_size=16</code> -- both of these parameters can be passed
+into event triggers or into the <code>Interface</code> class)</p>
+
+<p>With <code>Interface</code>:</p>
+
+<div class='codeblock'><pre><code class='lang-python'>demo = gr.Interface(trim_words, ["textbox", "number"], ["output"], 
+                    batch=True, max_batch_size=16)
+demo.queue()
+demo.launch()
+</code></pre></div>
+
+<p>With <code>Blocks</code>:</p>
+
+<div class='codeblock'><pre><code class='lang-py'>import gradio as gr
+
+with gr.Blocks() as demo:
+    with gr.Row():
+        word = gr.Textbox(label="word")
+        leng = gr.Number(label="leng")
+        output = gr.Textbox(label="Output")
+    with gr.Row():
+        run = gr.Button()
+
+    event = run.click(trim_words, [word, leng], output, batch=True, max_batch_size=16)
+
+demo.queue()
+demo.launch()
+</code></pre></div>
+
+<p>In the example above, 16 requests could be processed in parallel (for a total inference
+time of 5 seconds), instead of each request being processed separately (for a total
+inference time of 80 seconds). Many Hugging Face <code>transformers</code> and <code>diffusers</code> models
+work very naturally with Gradio's batch mode: here's <a rel="noopener" target="_blank" href="https://github.com/gradio-app/gradio/blob/main/demo/diffusers_with_batching/run.py">an example demo using diffusers to
+generate images in batches</a></p>
+
+<p>Note: using batch functions with Gradio <strong>requires</strong> you to enable queuing in the underlying Interface or Blocks (see the queuing section above).</p></div>
+        <div class="flex justify-between mt-4">
+          
+            <a href="/quickstart/"
+               class="text-left p-4 bg-gray-50 hover:underline">
+              <div class="text-gray-600 block">&lt; Previous</div>
+              <div class="text-lg font-semibold">Quickstart</div>
+            </a>
+          
+          
+            <a href="/sharing-your-app/"
+               class="text-right p-4 bg-gray-50 hover:underline">
+              <div class="text-gray-600 block">Next &gt;</div>
+              <div class="text-lg font-semibold">Sharing Your App</div>
+            </a>
+          
+        </div>
+      </div>
+    </div>
+    <script src="/assets/prism.js"></script>
+    <script>window.__gradio_mode__ = "website";</script>
+    <footer class="container mx-auto flex-row flex items-center px-4 py-6 justify-between">
+  <a href="/">
+    <svg width="90"
+         viewBox="0 0 451 105"
+         fill="none"
+         xmlns="http://www.w3.org/2000/svg">
+      <path d="M45.7779 9.7789L91.2031 34.6919V49.2071L45.7779 24.2941V9.7789Z" fill="#FF7C00" fill-opacity="0.75" />
+      <path d="M91.1878 34.6924L45.5957 59.6992V74.3078L91.1878 49.301V34.6924Z" fill="#FF7C00" />
+      <path d="M-0.000525172 34.6924L45.5957 59.6992V74.3079L-0.000525172 49.3011V34.6924Z" fill="#FF7C00"
+      fill-opacity="0.75" />
+      <path d="M45.7731 9.68544L0.00585938 34.6919V49.3006L45.7731 24.2942V9.68544Z" fill="#FF7C00" />
+      <path d="M45.7779 34.9728L91.2031 59.8857V74.4009L45.7779 49.488V34.9728Z" fill="#FF7C00" fill-opacity="0.75" />
+      <path d="M91.1878 59.8853L45.5957 84.8921V99.5007L91.1878 74.4939V59.8853Z" fill="#FF7C00" />
+      <path d="M-0.000525172 59.8853L45.5957 84.8921V99.5008L-0.000525172 74.494V59.8853Z" fill="#FF7C00"
+      fill-opacity="0.75" />
+      <path d="M45.7731 34.8783L0.00585938 59.8848V74.4935L45.7731 49.4871V34.8783Z" fill="#FF7C00" />
+      <path
+      d="M139.727 96.9891L148.148 86.596C152.803 90.8598 157.991 92.9917 163.711 92.9917C167.549 92.9917 170.711 92.4232 173.198 91.2862C175.686 90.1492 176.929 88.5858 176.929 86.596C176.929 83.2205 174.176 81.5327 168.668 81.5327C167.176 81.5327 164.955 81.7104 162.006 82.0657C159.057 82.421 156.836 82.5987 155.344 82.5987C146.176 82.5987 141.593 79.312 141.593 72.7386C141.593 70.8554 142.357 69.0077 143.885 67.1956C145.413 65.3835 147.189 64.0511 149.214 63.1983C142.712 58.97 139.461 52.9829 139.461 45.237C139.461 39.1255 141.699 34.08 146.176 30.1004C150.653 26.0853 156.161 24.0777 162.699 24.0777C167.815 24.0777 172.097 25.0371 175.544 26.9558L180.767 20.8799L189.987 29.2476L183.645 33.8845C185.848 37.2245 186.949 41.1686 186.949 45.7166C186.949 52.219 184.959 57.4244 180.98 61.3329C177.036 65.2058 172.044 67.1423 166.003 67.1423C165.044 67.1423 163.765 67.0535 162.166 66.8758L159.981 66.5561C159.732 66.5561 158.772 66.9469 157.102 67.7286C155.468 68.4748 154.651 69.2565 154.651 70.0737C154.651 71.495 155.877 72.2056 158.328 72.2056C159.43 72.2056 161.277 71.9391 163.871 71.4062C166.465 70.8732 168.686 70.6067 170.534 70.6067C183.503 70.6067 189.987 75.8121 189.987 86.2229C189.987 91.9791 187.393 96.4916 182.206 99.7606C177.018 103.065 170.764 104.717 163.445 104.717C154.704 104.717 146.798 102.141 139.727 96.9891ZM153.052 45.2903C153.052 48.6658 153.976 51.384 155.823 53.4448C157.707 55.4701 160.229 56.4828 163.392 56.4828C166.554 56.4828 168.988 55.4879 170.693 53.4981C172.399 51.5083 173.252 48.7724 173.252 45.2903C173.252 42.4122 172.328 39.9782 170.48 37.9885C168.668 35.9987 166.305 35.0038 163.392 35.0038C160.336 35.0038 157.849 35.9631 155.93 37.8819C154.011 39.8006 153.052 42.27 153.052 45.2903Z"
+      fill="#FF7C00" />
+      <path
+      d="M231.773 37.6687C229.392 36.1053 226.78 35.3236 223.938 35.3236C220.847 35.3236 218.093 36.7271 215.677 39.5341C213.296 42.3411 212.106 45.7699 212.106 49.8206V82.3322H198.781V25.2503H212.106V30.4735C215.837 26.2807 220.793 24.1843 226.976 24.1843C231.524 24.1843 235.006 24.8772 237.422 26.263L231.773 37.6687Z"
+      fill="#FF7C00" />
+      <path
+      d="M277.236 76.6293C276.028 78.6191 273.913 80.2536 270.893 81.5327C267.909 82.7763 264.782 83.3981 261.513 83.3981C255.366 83.3981 250.533 81.8703 247.016 78.8145C243.498 75.7233 241.739 71.3529 241.739 65.7033C241.739 59.0944 244.209 53.9245 249.148 50.1936C254.122 46.4628 261.175 44.5974 270.307 44.5974C271.87 44.5974 273.718 44.8639 275.85 45.3968C275.85 38.6813 271.604 35.3236 263.112 35.3236C258.102 35.3236 253.909 36.1586 250.533 37.8286L247.655 27.4888C252.239 25.2858 257.693 24.1843 264.018 24.1843C272.723 24.1843 279.101 26.1741 283.152 30.1537C287.202 34.0977 289.228 41.5949 289.228 52.6453V64.8505C289.228 72.4543 290.756 77.2334 293.811 79.1876C292.71 81.1063 291.484 82.2789 290.134 82.7053C288.783 83.1672 287.238 83.3981 285.497 83.3981C283.578 83.3981 281.855 82.6875 280.327 81.2662C278.799 79.845 277.769 78.2993 277.236 76.6293ZM275.956 55.4701C273.682 55.0082 271.977 54.7773 270.84 54.7773C260.322 54.7773 255.064 58.2238 255.064 65.117C255.064 70.2336 258.031 72.7919 263.965 72.7919C271.959 72.7919 275.956 68.7946 275.956 60.7999V55.4701Z"
+      fill="#FF7C00" />
+      <path
+      d="M340.393 82.3322V78.8678C339.292 80.0759 337.427 81.1419 334.797 82.0657C332.168 82.954 329.45 83.3981 326.643 83.3981C318.684 83.3981 312.412 80.8754 307.829 75.8299C303.28 70.7843 301.006 63.749 301.006 54.724C301.006 45.6989 303.618 38.3615 308.841 32.712C314.1 27.0269 320.673 24.1843 328.561 24.1843C332.896 24.1843 336.84 25.0726 340.393 26.8492V3.98449L353.718 0.786621V82.3322H340.393ZM340.393 38.8945C337.551 36.6205 334.584 35.4835 331.493 35.4835C326.163 35.4835 322.059 37.1179 319.181 40.3869C316.303 43.6203 314.864 48.2749 314.864 54.3509C314.864 66.2185 320.584 72.1523 332.026 72.1523C333.305 72.1523 334.868 71.7792 336.716 71.0331C338.599 70.2514 339.825 69.4697 340.393 68.688V38.8945Z"
+      fill="#FF7C00" />
+      <path
+      d="M377.542 3.13172C379.674 3.13172 381.486 3.89566 382.978 5.42353C384.506 6.91586 385.27 8.72799 385.27 10.8599C385.27 12.9918 384.506 14.8217 382.978 16.3496C381.486 17.8419 379.674 18.5881 377.542 18.5881C375.41 18.5881 373.58 17.8419 372.052 16.3496C370.56 14.8217 369.814 12.9918 369.814 10.8599C369.814 8.72799 370.56 6.91586 372.052 5.42353C373.58 3.89566 375.41 3.13172 377.542 3.13172ZM370.667 82.3322V36.1763H363.365V25.2503H384.151V82.3322H370.667Z"
+      fill="#FF7C00" />
+      <path
+      d="M395.983 53.658C395.983 44.9527 398.488 37.8641 403.498 32.3922C408.544 26.9203 415.188 24.1843 423.431 24.1843C432.101 24.1843 438.834 26.8137 443.631 32.0724C448.428 37.3311 450.826 44.5263 450.826 53.658C450.826 62.7541 448.375 69.9849 443.471 75.3502C438.603 80.7155 431.924 83.3981 423.431 83.3981C414.762 83.3981 408.011 80.6977 403.178 75.2969C398.381 69.8605 395.983 62.6476 395.983 53.658ZM409.84 53.658C409.84 66.2363 414.371 72.5254 423.431 72.5254C427.589 72.5254 430.875 70.8909 433.291 67.622C435.743 64.3531 436.969 59.6984 436.969 53.658C436.969 41.2574 432.456 35.0571 423.431 35.0571C419.274 35.0571 415.97 36.6915 413.518 39.9605C411.066 43.2294 409.84 47.7952 409.84 53.658Z"
+      fill="#FF7C00" />
+    </svg>
+  </a>
+  <div class="flex gap-3">
+    <a href="https://status.gradio.app" target="_blank" class="text-gray-400 hover:text-gray-500">
+      <span>Status</span>
+    </a>
+    <a class="hover:opacity-75 transition" href="https://twitter.com/Gradio">
+      <img src="/assets/img/twitter.svg" class="w-6">
+    </a>
+    <a class="hover:opacity-75 transition"
+       href="https://github.com/gradio-app/gradio">
+      <img src="/assets/img/github.svg" class="w-6">
+    </a>
+  </div>
+</footer>
+    <script>
+      let sidebar = document.querySelector(".side-navigation")
+      let target_link = document.querySelector(".current-nav-link");
+      if (target_link.previousElementSibling.classList.contains("category-link")) {
+        target_link = target_link.previousElementSibling;
+      }
+      sidebar.scrollTop = target_link.offsetTop
+      document.querySelectorAll(".prose h2").forEach(subheader => {
+        document.querySelector(".navigation").innerHTML += `
+          <a class='subheading block thin-link -indent-2 ml-4 mr-2' href='#${subheader.id}'>${subheader.innerText}</a>
+        `
+      })
+
+      const COLORS = ["bg-green-50", "bg-yellow-50", "bg-red-50", "bg-pink-50", "bg-purple-50"];
+      document.querySelectorAll(".space-link").forEach(guide => {
+        const color = COLORS[Math.floor(Math.random() * COLORS.length)]
+        guide.classList.add(color);
+      })
+
+      const show_all_guides = () => {
+        document.querySelectorAll(".guide-link").forEach(g => g.classList.remove("hidden"));
+        document.querySelector(".show-guides").remove();
+      }
+    </script>
+    <script>let mainNavLinks = document.querySelectorAll(".navigation a");
+window.addEventListener("scroll", event => {
+    let fromTop = window.scrollY;
+    let lowest_link = null;
+    mainNavLinks.forEach(link => {
+        let section = document.querySelector(link.hash);
+        if (section.offsetTop <= fromTop * 1.01) {
+            lowest_link = link;
+        }
+        link.classList.remove("current-nav-link");
+    });
+    lowest_link.classList.add("current-nav-link");
+});</script>
+    <script>// adds anchor button when hovering over headers, except on touch devices where instead the header becomes a link
+
+function createAnchorTag(link) {
+        let a = document.createElement('a');
+        a.href = link;
+        a.classList.add("invisible", "group-hover-visible");
+        let img = document.createElement('img');
+        img.classList.add("anchor-img")
+        img.src = "/assets/img/anchor.svg";
+        a.appendChild(img);
+        return a;
+    }
+function createMobileAnchorTag(link) {
+        let a = document.createElement('a');
+        a.href = link;
+        a.classList.add("no-underline")
+        return a;
+    }
+
+var headers = document.querySelectorAll("h2, h3");
+
+function isTouchDevice() {
+        return (('ontouchstart' in window) ||
+           (navigator.maxTouchPoints > 0) ||
+           (navigator.msMaxTouchPoints > 0));
+      }
+
+if (isTouchDevice()) {
+      for (let i = 0; i < headers.length; i++) {
+            let link = '#' + headers[i].id;
+            var wrapper = createMobileAnchorTag(link);
+            headers[i].replaceWith(wrapper);
+            wrapper.appendChild(headers[i]);
+      }
+} else {
+      for (let i = 0; i < headers.length; i++) {
+        headers[i].classList.add("group")
+        let link = '#' + headers[i].id;
+        var anchorTag = createAnchorTag(link);
+        headers[i].appendChild(createAnchorTag(link));
+      }
+}</script>
+    <script>// add copy buttons to all codeblocks
+
+const svgCopy =
+'<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg>';
+const svgCheck =
+'<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"><path fill-rule="evenodd" fill="rgb(255, 124, 1)" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg>';
+
+
+const addCopyButtons = (clipboard) => {
+  document.querySelectorAll("pre > code").forEach((codeBlock) => {
+  const button = document.createElement("button");
+  button.classList.add("clipboard-button");
+  button.type = "button";
+  button.innerHTML = svgCopy;
+  button.addEventListener("click", () => {
+    clipboard.writeText(codeBlock.innerText).then(
+      () => {
+        button.blur();
+        button.innerHTML = svgCheck;
+        setTimeout(() => (button.innerHTML = svgCopy), 2000);
+      },
+      (error) => (button.innerHTML = "Error")
+    );
+  });
+  const pre = codeBlock.parentNode;
+  pre.parentNode.insertBefore(button, pre);
+});
+};
+
+if (navigator && navigator.clipboard) {
+addCopyButtons(navigator.clipboard);
+};</script>
+    <script>function load_gradio(FILE_URL) {
+    console.log(FILE_URL);
+    var len = Array.from(document.querySelectorAll('script')).filter(e => e.getAttribute('src') == FILE_URL).length;
+    if (len === 0) {
+      let scriptEle = document.createElement("script");
+      scriptEle.setAttribute("src", FILE_URL);
+      scriptEle.setAttribute("type", "module");
+      document.body.appendChild(scriptEle);
+    }
+  }
+
+  
+
+  load_gradio("https://gradio.s3-us-west-2.amazonaws.com/3.27.0/gradio.js");</script>
+  </body>
+</html>

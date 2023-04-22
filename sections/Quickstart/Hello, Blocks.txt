@@ -1,0 +1,3 @@
+Let's take a look at a simple example. Note how the API here differs from Interface.
+
+Things to note:

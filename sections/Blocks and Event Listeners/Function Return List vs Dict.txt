@@ -1,0 +1,7 @@
+Similarly, you may return values for multiple output components either as:
+Let's first see an example of (1), where we set the values of two output components by returning two values:
+Above, each return statement returns two values corresponding to food_box and status_box, respectively.
+Instead of returning a list of values corresponding to each output component in order, you can also return a dictionary, with the key corresponding to the output component and the value as the new value. This also allows you to skip updating some output components. 
+Notice how when there is no food, we only update the status_box element. We skipped updating the food_box component.
+Dictionary returns are helpful when an event listener affects many components on return, or conditionally affects outputs and not others.
+Keep in mind that with dictionary returns, we still need to specify the possible outputs in the event listener.

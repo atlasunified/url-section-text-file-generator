@@ -1,0 +1,14 @@
+Let's say we have the following demo that translates english text to german text. 
+I already went ahead and hosted it in Hugging Face spaces at gradio/english_translator.
+You can see the demo below as well:
+
+Now, let's say you have an app that generates english text, but you wanted to additionally generate german text.
+You could either:
+Copy the source code of my english-to-german translation and paste it in your app.
+Load my english-to-german translation in your app and treat it like a normal python function.
+Option 1 technically always works, but it often introduces unwanted complexity.
+Option 2 lets you borrow the functionality you want without tightly coupling our apps.
+All you have to do is call the Blocks.load class method in your source file.
+After that, you can use my translation app like a regular python function!
+The following code snippet and demo shows how to use Blocks.load.
+Note that the variable english_translator is my english to german app, but its used in generate_text like a regular function.

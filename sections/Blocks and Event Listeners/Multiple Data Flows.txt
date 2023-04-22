@@ -1,0 +1,4 @@
+A Blocks app is not limited to a single data flow the way Interfaces are. Take a look at the demo below:
+
+Note that num1 can act as input to num2, and also vice-versa! As your apps get more complex, you will have many data flows connecting various Components. 
+Here's an example of a "multi-step" demo, where the output of one model (a speech-to-text model) gets fed into the next model (a sentiment classifier).

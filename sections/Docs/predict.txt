@@ -1,0 +1,1 @@
+Calls the Gradio API and returns the result (this is a blocking call). 

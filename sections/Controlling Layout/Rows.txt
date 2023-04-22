@@ -1,0 +1,3 @@
+Elements within a with gr.Row clause will all be displayed horizontally. For example, to display two Buttons side by side:
+To make every element in a Row have the same height, use the equal_height argument of the style method.
+Learn more about Rows in the docs.

@@ -1,0 +1,25 @@
+
+colors.Color | str
+default: Color()
+The primary hue of the theme. Load a preset, like gradio.themes.colors.green (or just the string "green"), or pass your own gradio.themes.utils.Color object.
+colors.Color | str
+default: Color()
+The secondary hue of the theme. Load a preset, like gradio.themes.colors.green (or just the string "green"), or pass your own gradio.themes.utils.Color object.
+colors.Color | str
+default: Color()
+The neutral hue of the theme, used . Load a preset, like gradio.themes.colors.green (or just the string "green"), or pass your own gradio.themes.utils.Color object.
+sizes.Size | str
+default: Size()
+The size of the text. Load a preset, like gradio.themes.sizes.text_sm (or just the string "sm"), or pass your own gradio.themes.utils.Size object.
+sizes.Size | str
+default: Size()
+The size of the spacing. Load a preset, like gradio.themes.sizes.spacing_sm (or just the string "sm"), or pass your own gradio.themes.utils.Size object.
+sizes.Size | str
+default: Size()
+The radius size of corners. Load a preset, like gradio.themes.sizes.radius_sm (or just the string "sm"), or pass your own gradio.themes.utils.Size object.
+fonts.Font | str | Iterable[fonts.Font | str]
+default: (, 'ui-sans-serif', 'system-ui', 'sans-serif')
+The primary font to use for the theme. Pass a string for a system font, or a gradio.themes.font.GoogleFont object to load a font from Google Fonts. Pass a list of fonts for fallbacks.
+fonts.Font | str | Iterable[fonts.Font | str]
+default: (, 'ui-monospace', 'Consolas', 'monospace')
+The monospace font to use for the theme, applies to code. Pass a string for a system font, or a gradio.themes.font.GoogleFont object to load a font from Google Fonts. Pass a list of fonts for fallbacks.

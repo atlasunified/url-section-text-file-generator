@@ -1,0 +1,36 @@
+Creates a numeric field for user to enter numbers as input or display numeric output. 
+ As input:  passes field value as a float or int into the function, depending on `precision`.
+ As output: expects an int or float returned from the function and sets field value to it.
+ Format expected for examples: a float or int representing the number's value.
+float | Callable | None
+default: None
+default value. If callable, the function will be called whenever the app loads to set the initial value of the component.
+str | None
+default: None
+component name in interface.
+str | None
+default: None
+additional component description.
+float | None
+default: None
+If `value` is a callable, run the function 'every' number of seconds while the client connection is open. Has no effect otherwise. Queue must be enabled. The event can be accessed (e.g. to cancel it) via this component's .load_event attribute.
+bool
+default: True
+if True, will display label.
+bool | None
+default: None
+if True, will be editable; if False, editing will be disabled. If not provided, this is inferred based on whether the component is used as an input or output.
+bool
+default: True
+If False, component will be hidden.
+str | None
+default: None
+An optional string that is assigned as the id of this component in the HTML DOM. Can be used for targeting CSS styles.
+List[str] | str | None
+default: None
+An optional list of strings that are assigned as the classes of this component in the HTML DOM. Can be used for targeting CSS styles.
+int | None
+default: None
+Precision to round input/output to. If set to 0, will round to nearest integer and convert type to int. If None, no rounding happens.
+gradio.Number
+"number"

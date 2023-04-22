@@ -1,0 +1,1 @@
+We took a quick look at Blocks in the Quickstart. Let's dive deeper. This guide will cover the how Blocks are structured, event listeners and their types, running events continuously, updating configurations, and using dictionaries vs lists. 

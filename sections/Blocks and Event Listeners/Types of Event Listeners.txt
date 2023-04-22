@@ -1,0 +1,3 @@
+Take a look at the demo below:
+
+Instead of being triggered by a click, the welcome function is triggered by typing in the Textbox inp. This is due to the change() event listener. Different Components support different event listeners. For example, the Video Component supports a play() event listener, triggered when a user presses play. See the Docs for the event listeners for each Component.

@@ -1,0 +1,1 @@
+Convert the theme into a python dictionary.

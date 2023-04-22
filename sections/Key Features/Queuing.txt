@@ -1,0 +1,6 @@
+If your app expects heavy traffic, use the queue() method to control processing rate. This will queue up calls so only a certain number of requests are processed at a single time. Queueing uses websockets, which also prevent network timeouts, so you should use queueing if the inference time of your function is long (> 1min).
+With Interface:
+With Blocks:
+You can control the number of requests processsed at a single time as such:
+See the Docs on queueing on configuring other queuing parameters.
+To specify only certain functions for queueing in Blocks:

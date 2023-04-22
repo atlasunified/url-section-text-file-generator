@@ -1,0 +1,70 @@
+Creates an image component that can be used to upload/draw images (as an input) or display images (as an output).
+ As input:  passes the uploaded image as a numpy.array, PIL.Image or str filepath depending on `type` -- unless `tool` is `sketch` AND source is one of `upload` or `webcam`. In these cases, a dict with keys `image` and `mask` is passed, and the format of the corresponding values depends on `type`.
+ As output: expects a numpy.array, PIL.Image or str or pathlib.Path filepath to an image and displays the image.
+ Format expected for examples: a str filepath to a local file that contains the image.
+Supported events: check_streamable()
+str | _Image.Image | np.ndarray | None
+default: None
+A PIL Image, numpy array, path or URL for the default value that Image component is going to take. If callable, the function will be called whenever the app loads to set the initial value of the component.
+Tuple[int, int] | None
+default: None
+(width, height) shape to crop and resize image to; if None, matches input image size. Pass None for either width or height to only crop and resize the other.
+str
+default: "RGB"
+"RGB" if color, or "L" if black and white.
+bool
+default: False
+whether to invert the image as a preprocessing step.
+str
+default: "upload"
+Source of image. "upload" creates a box where user can drop an image file, "webcam" allows user to take snapshot from their webcam, "canvas" defaults to a white image that can be edited and drawn upon with tools.
+str | None
+default: None
+Tools used for editing. "editor" allows a full screen editor (and is the default if source is "upload" or "webcam"), "select" provides a cropping and zoom tool, "sketch" allows you to create a binary sketch (and is the default if source="canvas"), and "color-sketch" allows you to created a sketch in different colors. "color-sketch" can be used with source="upload" or "webcam" to allow sketching on an image. "sketch" can also be used with "upload" or "webcam" to create a mask over an image and in that case both the image and mask are passed into the function as a dictionary with keys "image" and "mask" respectively.
+str
+default: "numpy"
+The format the image is converted to before being passed into the prediction function. "numpy" converts the image to a numpy array with shape (width, height, 3) and values from 0 to 255, "pil" converts the image to a PIL image object, "filepath" passes a str path to a temporary file containing the image.
+str | None
+default: None
+component name in interface.
+float | None
+default: None
+If `value` is a callable, run the function 'every' number of seconds while the client connection is open. Has no effect otherwise. Queue must be enabled. The event can be accessed (e.g. to cancel it) via this component's .load_event attribute.
+bool
+default: True
+if True, will display label.
+bool | None
+default: None
+if True, will allow users to upload and edit an image; if False, can only be used to display images. If not provided, this is inferred based on whether the component is used as an input or output.
+bool
+default: True
+If False, component will be hidden.
+bool
+default: False
+If True when used in a `live` interface, will automatically stream webcam feed. Only valid is source is 'webcam'.
+str | None
+default: None
+An optional string that is assigned as the id of this component in the HTML DOM. Can be used for targeting CSS styles.
+List[str] | str | None
+default: None
+An optional list of strings that are assigned as the classes of this component in the HTML DOM. Can be used for targeting CSS styles.
+bool
+default: True
+If True webcam will be mirrored. Default is True.
+float | None
+default: None
+Size of the brush for Sketch. Default is None which chooses a sensible default
+gradio.Image
+"image"
+gradio.Webcam
+"webcam"
+gradio.Sketchpad
+"sketchpad"
+gradio.Paint
+"paint"
+gradio.ImageMask
+"imagemask"
+gradio.ImagePaint
+"imagepaint"
+gradio.Pil
+"pil"

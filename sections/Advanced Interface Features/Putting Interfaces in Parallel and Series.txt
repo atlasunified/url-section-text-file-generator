@@ -1,0 +1,4 @@
+Gradio also lets you mix interfaces very easily using the gradio.Parallel and gradio.Series classes. Parallel lets you put two similar models (if they have the same input type) in parallel to compare model predictions:
+Series lets you put models and spaces in series, piping the output of one model into the input of the next model. 
+And of course, you can also mix Parallel and Series together whenever that makes sense!
+Learn more about Parallel and Series in the docs. 

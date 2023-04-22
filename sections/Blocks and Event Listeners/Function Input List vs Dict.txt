@@ -1,0 +1,4 @@
+The event listeners you've seen so far have a single input component. If you'd like to have multiple input components pass data to the function, you have two options on how the function can accept input component values:
+Let's see an example of each:
+Both add() and sub() take a and b as inputs. However, the syntax is different between these listeners. 
+It is a matter of preference which syntax you prefer! For functions with many input components, option 2 may be easier to manage.

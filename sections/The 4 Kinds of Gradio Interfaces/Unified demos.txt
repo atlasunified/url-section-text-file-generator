@@ -1,0 +1,1 @@
+A demo that has a single component as both the input and the output. It can simply be created by setting the values of the inputs and outputs parameter as the same component. Here's an example demo of a text generation model:

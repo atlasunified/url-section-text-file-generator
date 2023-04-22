@@ -1,0 +1,5 @@
+You may wish to put an authentication page in front of your app to limit who can open your app. With the auth= keyword argument in the launch() method, you can provide a tuple with a username and password, or a  list of acceptable username/password tuples;  Here's an example that provides password-based authentication for a single user named "admin":
+For more complex authentication handling, you can even pass a function that takes a username and password as arguments, and returns True to allow authentication, False otherwise. This can be used for, among other things, making requests to 3rd-party authentication services.
+Here's an example of a function that accepts any login where the username and password are the same:
+For authentication to work properly, third party cookies must be enabled in your browser.
+This is not the case by default for Safari, Chrome Incognito Mode.

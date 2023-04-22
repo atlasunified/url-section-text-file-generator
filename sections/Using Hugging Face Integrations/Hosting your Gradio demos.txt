@@ -1,0 +1,1 @@
+Hugging Face Spaces allows anyone to host their Gradio demos freely. The community shares oven 2,000 Spaces. Uploading your Gradio demos take a couple of minutes. You can head to hf.co/new-space, select the Gradio SDK, create an app.py file, and voila! You have a demo you can share with anyone else.

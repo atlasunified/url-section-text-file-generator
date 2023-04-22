@@ -1,0 +1,44 @@
+Creates a video component that can be used to upload/record videos (as an input) or display videos (as an output). For the video to be playable in the browser it must have a compatible container and codec combination. Allowed combinations are .mp4 with h264 codec, .ogg with theora codec, and .webm with vp9 codec. If the component detects that the output video would not be playable in the browser it will attempt to convert it to a playable mp4 video. If the conversion fails, the original video is returned.
+ As input:  passes the uploaded video as a str filepath or URL whose extension can be modified by `format`.
+ As output: expects a str filepath to a video which is displayed, or a Tuple[str, str] where the first element is a filepath to a video and the second element is a filepath to a subtitle file.
+ Format expected for examples: a str filepath to a local file that contains the video, or a Tuple[str, str] where the first element is a filepath to a video file and the second element is a filepath to a subtitle file.
+str | Tuple[str, str | None] | Callable | None
+default: None
+A path or URL for the default value that Video component is going to take. Can also be a tuple consisting of (video filepath, subtitle filepath). If a subtitle file is provided, it should be of type .srt or .vtt. Or can be callable, in which case the function will be called whenever the app loads to set the initial value of the component.
+str | None
+default: None
+Format of video format to be returned by component, such as 'avi' or 'mp4'. Use 'mp4' to ensure browser playability. If set to None, video will keep uploaded format.
+str
+default: "upload"
+Source of video. "upload" creates a box where user can drop an video file, "webcam" allows user to record a video from their webcam.
+str | None
+default: None
+component name in interface.
+float | None
+default: None
+If `value` is a callable, run the function 'every' number of seconds while the client connection is open. Has no effect otherwise. Queue must be enabled. The event can be accessed (e.g. to cancel it) via this component's .load_event attribute.
+bool
+default: True
+if True, will display label.
+bool | None
+default: None
+if True, will allow users to upload a video; if False, can only be used to display videos. If not provided, this is inferred based on whether the component is used as an input or output.
+bool
+default: True
+If False, component will be hidden.
+str | None
+default: None
+An optional string that is assigned as the id of this component in the HTML DOM. Can be used for targeting CSS styles.
+List[str] | str | None
+default: None
+An optional list of strings that are assigned as the classes of this component in the HTML DOM. Can be used for targeting CSS styles.
+bool
+default: True
+If True webcam will be mirrored. Default is True.
+bool | None
+default: None
+Whether the component should record/retain the audio track for a video. By default, audio is excluded for webcam videos and included for uploaded videos.
+gradio.Video
+"video"
+gradio.PlayableVideo
+"playablevideo"

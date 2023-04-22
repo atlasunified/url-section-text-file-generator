@@ -1,0 +1,10 @@
+A catch-all method for integrating with other libraries. This method should be run after launch()
+
+default: None
+If a comet_ml Experiment object is provided, will integrate with the experiment and appear on Comet dashboard
+ModuleType | None
+default: None
+If the wandb module is provided, will integrate with it and appear on WandB dashboard
+ModuleType | None
+default: None
+If the mlflow module  is provided, will integrate with the experiment and appear on ML Flow dashboard
